@@ -1,2 +1,3 @@
-from openpyxl import Workbook 
+import pandas as pd
 
+pd.read_excel('Diku.xlsx', sheet_name='DIKU')
