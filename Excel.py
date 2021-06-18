@@ -7,11 +7,7 @@ sheet = workbook.active
 
 sheet["A1"] = "Test123"
 
-sheet["D4"] = "Test43215321"
-
-sheet["A4"] = 'test'
-
-sheet["E5"] = 'yesyes'
+sheet["F3"] = 'enda en test'
 
 workbook.save(filename=filename)
 
