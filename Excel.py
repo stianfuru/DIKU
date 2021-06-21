@@ -1,6 +1,7 @@
 from os import sep
 import pandas as pd
 import nltk
+import sklearn 
 import string
 from nltk.corpus import stopwords
 
@@ -21,9 +22,11 @@ text_process(df)
 
 print(df.describe())
 
+#her har kamalan kommentert 
+
 #df_final = df.drop(kolonner, axis=1)
 
 #print(df.groupby('Læringsutbytte - Kunnskap').describe())
 
 #md = open("resultat.md", "w+")
-#md.write(str(df_final))
+#md.write(str(df_final))             
