@@ -23,6 +23,7 @@ text_process(df)
 print(df.describe())
 
 #her har kamalan kommentert 
+#test 2 - push
 
 #df_final = df.drop(kolonner, axis=1)
 
