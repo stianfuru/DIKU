@@ -11,15 +11,17 @@ kolonner = ['Læringsutbytte - Kunnskap','Læringsutbytte - Ferdigheter','Lærin
 keywords = ['fluidstatistik', 'programmering', 'bygningsfysiske']
 
 def text_process(frame):
-    nopunc = [char for char in frame if char not in string.punctuaton]
-    nopunc = ''.join(nopunc)
-    nopunc = [word for word in nopunc.split() if word.lower not in stopwords.words('english')]
+    nopunc = [char for char in frame if char not in string.punctuation]
+    nopunc = ''.join(nopunc)   
     nopunc = [word for word in nopunc.split() if word.lower not in stopwords.words('norwegian')]
     return nopunc
 
-text_process(df)
+#tokeized og prosessert versjon av læringsutbytte kolonnene
+LUK = df['Læringsutbytte - Kunnskap'].apply(text_process)
+LUF = df['Læringsutbytte - Ferdigheter'].apply(text_process)
+LUG = df['Læringsutbytte - Generell Kompetanse'].apply(text_process)
 
-print(df.describe())
+print(LUK)
 
 #df_final = df.drop(kolonner, axis=1)
 
