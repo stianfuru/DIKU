@@ -1,8 +1,13 @@
 import pandas as pd
 
-data = pd.read_excel('Diku.xlsx', sheet_name='DIKU', usecols='B,C,I')
+df = pd.read_excel('Diku.xlsx', sheet_name='DIKU', usecols='B,C,O,P,Q')
 
-bool_series = pd.isnull(data["Emneansvarlig"])
 
-md = open("resultat.md", "w+")
-md.write(str(data[bool_series]))
+keywords = ['fluidstatikk', 'programmering']
+
+output =  df.query('"fluidstatikk" in "Læringsutbytte - Kunnskap"')
+
+print(output)
+
+#md = open("resultat.md", "w+")
+#md.write(str(df))
