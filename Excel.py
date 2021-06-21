@@ -1,6 +1,7 @@
 from os import sep
 import pandas as pd
 import nltk
+import sklearn 
 import string
 from nltk.corpus import stopwords
 
@@ -23,9 +24,12 @@ LUG = df['Læringsutbytte - Generell Kompetanse'].apply(text_process)
 
 print(LUK)
 
+#her har kamalan kommentert 
+#test 2 - push
+
 #df_final = df.drop(kolonner, axis=1)
 
 #print(df.groupby('Læringsutbytte - Kunnskap').describe())
 
 #md = open("resultat.md", "w+")
-#md.write(str(df_final))
+#md.write(str(df_final))             
