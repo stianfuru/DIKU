@@ -1,16 +1,29 @@
+from os import sep
 import pandas as pd
+import nltk
+import string
+from nltk.corpus import stopwords
 
 df = pd.read_excel('Diku.xlsx', sheet_name='DIKU', usecols='B,C,O,P,Q')
 df.dropna(inplace = True)
 
+kolonner = ['Læringsutbytte - Kunnskap','Læringsutbytte - Ferdigheter','Læringsutbytte - Generell Kompetanse']
+keywords = ['fluidstatistik', 'programmering', 'bygningsfysiske']
 
-keywords = ['fluidstatikk', 'programmering', 'bygningsfysiske']
+def text_process(frame):
+    nopunc = [char for char in frame if char not in string.punctuaton]
+    nopunc = ''.join(nopunc)
+    nopunc = [word for word in nopunc.split() if word.lower not in stopwords.words('english')]
+    nopunc = [word for word in nopunc.split() if word.lower not in stopwords.words('norwegian')]
+    return nopunc
 
-output =  df['Læringsutbytte - Kunnskap'].str.contains(keywords[0])
-df_drop = df[output].drop('Læringsutbytte - Kunnskap', axis=1)
-df_drop1 = df_drop.drop('Læringsutbytte - Ferdigheter', axis=1)
-df_final = df_drop1.drop('Læringsutbytte - Generell Kompetanse', axis=1)
-print(df_final)
+text_process(df)
 
-md = open("resultat.md", "w+")
-md.write(str(df_final))
+print(df.describe())
+
+#df_final = df.drop(kolonner, axis=1)
+
+#print(df.groupby('Læringsutbytte - Kunnskap').describe())
+
+#md = open("resultat.md", "w+")
+#md.write(str(df_final))
