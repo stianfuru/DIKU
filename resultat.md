@@ -1,11 +1,5 @@
 LUK: 
-fluidstatikk BYPE1500
-betong BYTS2100
 LUF: 
-betong BYTS2100
+BYPE1500: Studenten kan beregne trykkvariasjon i en strømmende væske samt strømningsmengde og strømningshastighet kan regne ut overføring av varmeenergi termisk konduktivitet Kan utføre støkiometriske beregninger for en gitt kjemisk likevekt Kan bruke tilstandslikningen for ideelle gasser i beregninger Kan utføre enkle beregning for galvaniske celler og elektrolyse celler
+EMTS2200: Studenten kan utføre nødvendige beregninger for ingeniørmessig analyse av strømningstekniske problemer i praktiske konstruksjoner deriblant rørsystemer i bygninger og i naturen for øvrig beregne trykkfall gjennom et rør eller kanalsystem og deretter beregne nødvendig pumpe eller vifteeffekt beregne krefter som virker mellom væske i ro og vegg for dimensjonering av oppheng beregne krefter som virker mellom væskestrøm og rørvegg for dimensjonering av oppheng beregne hvor lang tid det tar å tømme en tank dimensjonere et enkelt nettverk av rørkanaler eksempelvis radiatorsystem måle strømningshastigheter og volum og massestrøm beregne strømningsmotstand for faste legemer som beveger seg relativt et fluid velge riktig størrelse på pumpe i et rørsystem
 LUG: 
-betong BYTS2300
-betong BYTS2100
-matematikk BYFE1000
-matematikk BYPE2000
-matematikk EMFE1000

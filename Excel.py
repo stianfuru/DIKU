@@ -8,7 +8,7 @@ df = pd.read_excel('Diku.xlsx', sheet_name='DIKU', usecols='B,C,O,P,Q')
 df.dropna(inplace = True)
 
 kolonner = ['Læringsutbytte - Kunnskap','Læringsutbytte - Ferdigheter','Læringsutbytte - Generell Kompetanse']
-keywords = ['Fluidstatikk', 'betong', 'matematikk']
+keywords = ['Fluidstatikk', 'betong', 'matematikk', 'væske']
 
 def text_process(frame):
     nopunc = [char for char in frame if char not in string.punctuation]
@@ -34,12 +34,14 @@ def wordsearch(frame):
     for _ in keywords:
         
         for _ in frame:
-            bow_transformer = CountVectorizer(analyzer=text_process).fit(frame[i])
-            unique += (len(bow_transformer.vocabulary_))
+            #bow_transformer = CountVectorizer(analyzer=text_process).fit(frame[i])
+            #unique += (len(bow_transformer.vocabulary_))
             for _ in frame[i]:
                 if keywords[k].lower() == frame[i][j].lower():    
-                    print(frame[i][j]+' '+ Emnekode[i])
-                    md.write(frame[i][j]+' '+ Emnekode[i]+'\n')
+                    #print(frame[i][j]+' '+ Emnekode[i])
+                    arraystr = ' '.join(map(str, frame[i]))
+                    print(Emnekode[i]+': '+arraystr)
+                    md.write(Emnekode[i]+': '+arraystr+'\n')
                 j = j + 1
             j = 0
             i = i + 1
