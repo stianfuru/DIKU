@@ -50,8 +50,16 @@ def wordsearch(frame):
  
 #print(unique)
 #print(words)
-
-
-
 md = open("resultat.md", "w+")
-wordsearch(LUK)
+def main():
+    print('LUK: ')
+    md.write('LUK: \n')
+    wordsearch(LUK)
+    print('LUF: ')
+    md.write('LUF: \n')
+    wordsearch(LUF)
+    print('LUG:')
+    md.write('LUG: \n')
+    wordsearch(LUG)
+
+main()
