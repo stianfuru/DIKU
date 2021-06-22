@@ -26,11 +26,11 @@ Emnekode = df['Emnekode']
 
 
 def wordsearch(frame):
-    j = 0
-    k = 0
-    i = 0
+    k = 0 #teller for keyword
+    i = 0 #teller for celle
+    j = 0 #teller for ord
+   
     unique = 0
-    words = 0
     for _ in keywords:
         
         for _ in frame:
@@ -51,6 +51,7 @@ def wordsearch(frame):
 #print(unique)
 #print(words)
 md = open("resultat.md", "w+")
+
 def main():
     print('LUK: ')
     md.write('LUK: \n')
