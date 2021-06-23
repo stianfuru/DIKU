@@ -29,18 +29,18 @@ Emnekode = df['Emnekode']
 
 def wordsearch(frame):
     k = 0 #teller for keyword
-    i = 0 #teller for celle
-    j = 0 #teller for ord
+    
+    
    
     unique = 0
     for _ in keywords:
-        i = 0
+        i = 0 #teller for celle
         print(keywords[k])
         md.write(keywords[k] +':\n')
         for _ in frame:
             #bow_transformer = CountVectorizer(analyzer=text_process).fit(frame[i])
             #unique += (len(bow_transformer.vocabulary_))
-            j = 0
+            j = 0 #teller for ord
             for _ in frame[i]:
                 search = re.search(keywords[k].lower(),frame[i][j].lower()) #søkefunskjon
                 if str(search) != 'None': #sjekker at det er match
