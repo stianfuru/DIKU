@@ -32,20 +32,21 @@ def wordsearch(frame):
    
     unique = 0
     for _ in keywords:
-        
+        i = 0
         for _ in frame:
             #bow_transformer = CountVectorizer(analyzer=text_process).fit(frame[i])
             #unique += (len(bow_transformer.vocabulary_))
+            j = 0
             for _ in frame[i]:
+                
                 if keywords[k].lower() == frame[i][j].lower():    
                     #print(frame[i][j]+' '+ Emnekode[i])
                     arraystr = ' '.join(map(str, frame[i]))
                     print(Emnekode[i]+': '+arraystr + '\n')
                     md.write(Emnekode[i]+': '+arraystr+'\n\n')
+                    break
                 j = j + 1
-            j = 0
             i = i + 1
-        i = 0
         k = k + 1
 
 
