@@ -9,7 +9,7 @@ df = pd.read_excel('Diku.xlsx', sheet_name='DIKU', usecols='B,C,O,P,Q')
 df.dropna(inplace = True)
 
 #kolonner = ['Læringsutbytte - Kunnskap','Læringsutbytte - Ferdigheter','Læringsutbytte - Generell Kompetanse']
-keywords = ['Fluid'] #søkeord
+keywords = ['Fluid', 'Dynamiske systemer'] #søkeord
 
 
 def text_process(frame):
@@ -35,21 +35,20 @@ def wordsearch(frame):
     unique = 0
     for _ in keywords:
         i = 0 #teller for celle
-        print(keywords[k])
-        md.write(keywords[k] +':\n')
+        print(keywords[k]+':')
+        md.write(keywords[k]+':\n')
         for _ in frame:
             #bow_transformer = CountVectorizer(analyzer=text_process).fit(frame[i])
             #unique += (len(bow_transformer.vocabulary_))
             j = 0 #teller for ord
-            for _ in frame[i]:
-                search = re.search(keywords[k].lower(),frame[i][j].lower()) #søkefunskjon
-                if str(search) != 'None': #sjekker at det er match
-                    #print(frame[i][j]+' '+ Emnekode[i])
-                    arraystr = ' '.join(map(str, frame[i])) #setter sammen igjen meldingen for printing
-                    print(Emnekode[i]+': '+arraystr + '\n') #printer ut emnekode og meldingen
-                    md.write(Emnekode[i]+': '+arraystr+'\n\n') #skriver det samme til resultat.md
-                    break
-                j = j + 1
+            arraystr = ' '.join(map(str, frame[i])) #setter sammen igjen meldingen for printing 
+            search = re.search(keywords[k].lower(),arraystr.lower()) #søkefunskjon
+            if str(search) != 'None': #sjekker at det er match
+                #print(frame[i][j]+' '+ Emnekode[i])
+                                   
+                print(Emnekode[i]+': '+arraystr + '\n') #printer ut emnekode og meldingen
+                md.write(Emnekode[i]+': '+arraystr+'\n\n') #skriver det samme til resultat.md
+                break                
             i = i + 1
         k = k + 1
 
