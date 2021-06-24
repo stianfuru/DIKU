@@ -71,8 +71,6 @@ def wordsearch(k):
 
 count_max = 0
 
-
-
 #print(unique)
 #print(words)
 md = open("resultat.md", "w+")
