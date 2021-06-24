@@ -3,13 +3,15 @@ import nltk
 import string
 import re
 from nltk.corpus import stopwords
-from sklearn.feature_extraction.text import CountVectorizer
+#from sklearn.feature_extraction.text import CountVectorizer
 
 df = pd.read_excel('Diku.xlsx', sheet_name='DIKU', usecols='B,C,O,P,Q')
 df.dropna(inplace = True)
 
 #kolonner = ['Læringsutbytte - Kunnskap','Læringsutbytte - Ferdigheter','Læringsutbytte - Generell Kompetanse']
-keywords = ['Fluid', 'Dynamiske systemer'] #søkeord
+keywords = ['digital tvilling', 'virtuell', ' vr ', ' ar ', ' xr ','hololens','big room','revit','programmvare','trimble'
+,' bim ','digital samhand','digitalisering','modell','kunstlig intelligens',' ice ',' vdc ','concurrent','engineering',' ipd ',
+'lean', 'maskinlæring',' ai '] #søkeord
 
 
 def text_process(frame):
@@ -29,9 +31,6 @@ Emnekode = df['Emnekode']
 
 def wordsearch(frame):
     k = 0 #teller for keyword
-    
-    
-   
     unique = 0
     for _ in keywords:
         i = 0 #teller for celle
@@ -40,12 +39,9 @@ def wordsearch(frame):
         for _ in frame:
             #bow_transformer = CountVectorizer(analyzer=text_process).fit(frame[i])
             #unique += (len(bow_transformer.vocabulary_))
-            j = 0 #teller for ord
             arraystr = ' '.join(map(str, frame[i])) #setter sammen igjen meldingen for printing 
             search = re.search(keywords[k].lower(),arraystr.lower()) #søkefunskjon
-            if str(search) != 'None': #sjekker at det er match
-                #print(frame[i][j]+' '+ Emnekode[i])
-                                   
+            if str(search) != 'None': #sjekker at det er match                                  
                 print(Emnekode[i]+': '+arraystr + '\n') #printer ut emnekode og meldingen
                 md.write(Emnekode[i]+': '+arraystr+'\n\n') #skriver det samme til resultat.md
                 break                
@@ -63,10 +59,10 @@ def main():
     md.write('LUK: \n')
     wordsearch(LUK)
     print('LUF: ')
-    md.write('LUF: \n')
+    md.write('\n\nLUF: \n')
     wordsearch(LUF)
     print('LUG:')
-    md.write('LUG: \n')
+    md.write('\n\nLUG: \n')
     wordsearch(LUG)
 
 main()
