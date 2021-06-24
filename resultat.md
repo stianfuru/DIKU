@@ -9,6 +9,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet: digital tvilling
 
 virtuell:
 LUK: 
@@ -20,6 +21,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet: virtuell
 
  vr :
 LUK: 
@@ -31,6 +33,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet:  vr 
 
  ar :
 LUK: 
@@ -42,6 +45,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet:  ar 
 
  xr :
 LUK: 
@@ -53,6 +57,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet:  xr 
 
 hololens:
 LUK: 
@@ -64,6 +69,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet: hololens
 
 big room:
 LUK: 
@@ -75,6 +81,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet: big room
 
 revit:
 LUK: 
@@ -86,6 +93,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet: revit
 
 programmvare:
 LUK: 
@@ -97,6 +105,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet: programmvare
 
 trimble:
 LUK: 
@@ -108,6 +117,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet: trimble
 
  bim :
 LUK: 
@@ -123,6 +133,7 @@ EMPE2500: Studenten kan utføre grunnleggende beregninger av varmetransport Uverd
 LUG: 
 0 treff av 48 mulige
 
+2 treff av totalt 144 mulige på søkeordet:  bim 
 
 digital samhand:
 LUK: 
@@ -134,6 +145,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet: digital samhand
 
 digitalisering:
 LUK: 
@@ -145,6 +157,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet: digitalisering
 
 modell:
 LUK: 
@@ -196,6 +209,7 @@ EMVE3700: Studenten kan bidra i arbeidet med å utvikle ny teknologi med bakgrunn
 
 6 treff av 48 mulige
 
+20 treff av totalt 144 mulige på søkeordet: modell
 
 kunstlig intelligens:
 LUK: 
@@ -207,6 +221,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet: kunstlig intelligens
 
  ice :
 LUK: 
@@ -218,6 +233,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet:  ice 
 
  vdc :
 LUK: 
@@ -229,6 +245,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet:  vdc 
 
 concurrent:
 LUK: 
@@ -240,6 +257,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet: concurrent
 
 engineering:
 LUK: 
@@ -251,6 +269,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet: engineering
 
  ipd :
 LUK: 
@@ -262,6 +281,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet:  ipd 
 
 lean:
 LUK: 
@@ -273,6 +293,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet: lean
 
 maskinlæring:
 LUK: 
@@ -284,6 +305,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet: maskinlæring
 
  ai :
 LUK: 
@@ -295,6 +317,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet:  ai 
 
  ifc :
 LUK: 
@@ -306,3 +329,4 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
+0 treff av totalt 144 mulige på søkeordet:  ifc 

@@ -1,5 +1,5 @@
 import pandas as pd
-import nltk
+#import nltk
 import string
 import re
 from nltk.corpus import stopwords
@@ -45,10 +45,13 @@ def wordsearch(k):
             search_in_frame(LUG, k)
         p = p + 1
 
+count_max = 0
+
 
 def search_in_frame(frame, k):
     i = 0 #indeks for celle
     count = 0
+    global count_max
     for _ in frame:
         
         #bow_transformer = CountVectorizer(analyzer=text_process).fit(frame[i])
@@ -64,6 +67,11 @@ def search_in_frame(frame, k):
         i = i + 1
     print(str(count)+' treff av 48 mulige\n')
     md.write(str(count)+' treff av 48 mulige\n\n')
+    count_max += count
+    if str(frame) == str(LUG):
+        print(str(count_max)+' treff av totalt 144 mulige på søkeordet: '+keywords[k])
+        md.write(str(count_max)+' treff av totalt 144 mulige på søkeordet: '+keywords[k]+'\n')
+        count_max = 0
 #print(unique)
 #print(words)
 md = open("resultat.md", "w+")
