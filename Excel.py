@@ -27,27 +27,6 @@ LUG = df['Læringsutbytte - Generell Kompetanse'].apply(text_process)
 
 Emnekode = df['Emnekode']
 
-
-def wordsearch(k):
-    p = 0   #indeks for frame
-    for _ in range(3):
-        if p == 0:
-            print('LUK:')
-            md.write('LUK: \n')
-            search_in_frame(LUK, k)
-        elif p == 1:
-            print('LUF:')
-            md.write('LUF: \n')
-            search_in_frame(LUF, k)
-        else: 
-            print('LUG:')
-            md.write('LUG: \n')
-            search_in_frame(LUG, k)
-        p = p + 1
-
-count_max = 0
-
-
 def search_in_frame(frame, k):
     i = 0 #indeks for celle
     count = 0
@@ -72,6 +51,28 @@ def search_in_frame(frame, k):
         print(str(count_max)+' treff av totalt 144 mulige på søkeordet: '+keywords[k])
         md.write(str(count_max)+' treff av totalt 144 mulige på søkeordet: '+keywords[k]+'\n')
         count_max = 0
+
+def wordsearch(k):
+    p = 0   #indeks for frame
+    for _ in range(3):
+        if p == 0:
+            print('LUK:')
+            md.write('LUK: \n')
+            search_in_frame(LUK, k)
+        elif p == 1:
+            print('LUF:')
+            md.write('LUF: \n')
+            search_in_frame(LUF, k)
+        else: 
+            print('LUG:')
+            md.write('LUG: \n')
+            search_in_frame(LUG, k)
+        p = p + 1
+
+count_max = 0
+
+
+
 #print(unique)
 #print(words)
 md = open("resultat.md", "w+")
