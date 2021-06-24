@@ -10,8 +10,7 @@ df.dropna(inplace = True)
 
 #kolonner = ['Læringsutbytte - Kunnskap','Læringsutbytte - Ferdigheter','Læringsutbytte - Generell Kompetanse']
 keywords = ['digital tvilling', 'virtuell', ' vr ', ' ar ', ' xr ','hololens','big room','revit','programmvare','trimble'
-,' bim ','digital samhand','digitalisering','modell','kunstlig intelligens',' ice ',' vdc ','concurrent','engineering',' ipd ',
-'lean', 'maskinlæring',' ai '] #søkeord
+,' bim ','digital samhand','digitalisering','modell','kunstlig intelligens',' ice ',' vdc ','concurrent','engineering',' ipd ','lean', 'maskinlæring',' ai ',' ifc '] #søkeord
 
 
 def text_process(frame):
@@ -29,40 +28,53 @@ LUG = df['Læringsutbytte - Generell Kompetanse'].apply(text_process)
 Emnekode = df['Emnekode']
 
 
-def wordsearch(frame):
-    k = 0 #teller for keyword
-    unique = 0
-    for _ in keywords:
-        i = 0 #teller for celle
-        print(keywords[k]+':')
-        md.write(keywords[k]+':\n')
-        for _ in frame:
-            #bow_transformer = CountVectorizer(analyzer=text_process).fit(frame[i])
-            #unique += (len(bow_transformer.vocabulary_))
-            arraystr = ' '.join(map(str, frame[i])) #setter sammen igjen meldingen for printing 
-            search = re.search(keywords[k].lower(),arraystr.lower()) #søkefunskjon
-            if str(search) != 'None': #sjekker at det er match                                  
-                print(Emnekode[i]+': '+arraystr + '\n') #printer ut emnekode og meldingen
-                md.write(Emnekode[i]+': '+arraystr+'\n\n') #skriver det samme til resultat.md
-                break                
+def wordsearch(k):
+    p = 0   #indeks for frame
+    for _ in range(3):
+        if p == 0:
+            print('LUK:')
+            md.write('LUK: \n')
+            search_in_frame(LUK, k)
+        elif p == 1:
+            print('LUF:')
+            md.write('LUF: \n')
+            search_in_frame(LUF, k)
+        else: 
+            print('LUG:')
+            md.write('LUG: \n')
+            search_in_frame(LUG, k)
+        p = p + 1
+
+
+def search_in_frame(frame, k):
+    i = 0 #indeks for celle
+    count = 0
+    for _ in frame:
+        
+        #bow_transformer = CountVectorizer(analyzer=text_process).fit(frame[i])
+        #unique += (len(bow_transformer.vocabulary_))
+        arraystr = ' '.join(map(str, frame[i])) #setter sammen igjen meldingen for printing 
+        search = re.search(keywords[k].lower(),arraystr.lower()) #søkefunskjon
+        if str(search) != 'None': #sjekker at det er match                                  
+            print(Emnekode[i]+': '+arraystr+'\n') #printer ut emnekode og meldingen
+            md.write(Emnekode[i]+': '+arraystr+'\n\n') #skriver det samme til resultat.m
+            count = count + 1
             i = i + 1
-        k = k + 1
-
-
- 
+            continue
+        i = i + 1
+    print(str(count)+' treff av 48 mulige\n')
+    md.write(str(count)+' treff av 48 mulige\n\n')
 #print(unique)
 #print(words)
 md = open("resultat.md", "w+")
 
 def main():
-    print('LUK: ')
-    md.write('LUK: \n')
-    wordsearch(LUK)
-    print('LUF: ')
-    md.write('\n\nLUF: \n')
-    wordsearch(LUF)
-    print('LUG:')
-    md.write('\n\nLUG: \n')
-    wordsearch(LUG)
+    k = 0 #indeks for keyword
+    for _ in keywords:
+        print('\n'+keywords[k]+':')
+        md.write('\n'+keywords[k]+':\n')
+        wordsearch(k)
+        k = k + 1
+        
 
 main()
