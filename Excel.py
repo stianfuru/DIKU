@@ -31,6 +31,7 @@ def search_in_frame(frame, k):
     i = 0 #indeks for celle
     count = 0
     global count_max
+    global actual_max
     for _ in frame:
         
         #bow_transformer = CountVectorizer(analyzer=text_process).fit(frame[i])
@@ -44,13 +45,14 @@ def search_in_frame(frame, k):
             i = i + 1
             continue
         i = i + 1
-    print(str(count)+' treff av 48 mulige\n') #sprinter ut antall treff
+    print(str(count)+' treff av 48 mulige\n') #printer ut antall treff
     md.write(str(count)+' treff av 48 mulige\n\n')
     count_max += count #legger til dette i max-count for keyword
 
     if str(frame) == str(LUG): #sjekker at det er siste frame
         print(str(count_max)+' treff av totalt 144 mulige på søkeordet: '+keywords[k]) #printer ut max_count
         md.write(str(count_max)+' treff av totalt 144 mulige på søkeordet: '+keywords[k]+'\n')
+        actual_max += count_max
         count_max = 0
 
 def wordsearch(k):
@@ -71,18 +73,23 @@ def wordsearch(k):
         p = p + 1
 
 count_max = 0
-
+actual_max = 0
 #print(unique)
 #print(words)
 md = open("resultat.md", "w+")
 
 def main():
     k = 0 #indeks for keyword
+
     for _ in keywords:
         print('\n'+keywords[k]+':')
         md.write('\n'+keywords[k]+':\n')
         wordsearch(k) #kjører søk
         k = k + 1 #neste søkeord
+
+    max_mulige = 144 * len(keywords)
+    print('\n\n'+str(actual_max)+' treff av totalt '+str(max_mulige)+' mulige.')
+    md.write('\n\n'+str(actual_max)+' treff av totalt '+str(max_mulige)+' mulige!.')    
         
 
 main()

@@ -330,3 +330,6 @@ LUG:
 0 treff av 48 mulige
 
 0 treff av totalt 144 mulige på søkeordet:  ifc 
+
+
+22 treff av totalt 3456 mulige!.
