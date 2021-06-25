@@ -31,6 +31,11 @@ wb.save(filename='resultat.xlsx')
 
 Emnekode = df['Emnekode']
 
+count_max = 0
+actual_max = 0
+
+md = open("resultat.md", "w+")
+
 def search_in_frame(frame, k):
     i = 0 #indeks for celle
     count = 0
@@ -53,7 +58,7 @@ def search_in_frame(frame, k):
     md.write(str(count)+' treff av 48 mulige\n\n')
     count_max += count #legger til dette i max-count for keyword
     if str(frame) == str(LUK):
-        ws.cell(k+2,2,count)
+        ws.cell(k+2,2,count) #skriver til excel ark
     elif str(frame) == str(LUF):
        ws.cell(k+2,3,count)
     else: #sjekker at det er siste frame
@@ -64,7 +69,6 @@ def search_in_frame(frame, k):
         actual_max += count_max
         count_max = 0
        
-
 def wordsearch(k):
     p = 0   #indeks for frame
     for _ in range(3):
@@ -82,34 +86,29 @@ def wordsearch(k):
             search_in_frame(LUG, k)
         p = p + 1
 
-count_max = 0
-actual_max = 0
-#print(unique)
-#print(words)
-md = open("resultat.md", "w+")
-
 def main():
     k = 0 #indeks for keyword
 
     for _ in keywords:
         print('\n'+keywords[k]+':')
         md.write('\n'+keywords[k]+':\n')
-        ws.cell(column = 1, row = k+2).value = keywords[k]
+        ws.cell(k+2,1,keywords[k])
         wordsearch(k) #kjører søk
         k = k + 1 #neste søkeord
 
     max_mulige = 144 * len(keywords)
+
     print('\n\n'+str(actual_max)+' treff av totalt '+str(max_mulige)+' mulige.')
     md.write('\n\n'+str(actual_max)+' treff av totalt '+str(max_mulige)+' mulige!.')
     ws.cell(2,7,actual_max)
     ws.cell(2,13,max_mulige)
 
-    for _ in range(ws.max_row): 
+    for _ in range(ws.max_row): #fjerner ord som ikke er i keywords
         if ws.cell(1,len(keywords)+2) != None:
             ws.delete_rows(len(keywords)+2)
             
-              
-
     wb.save(filename='resultat.xlsx')    
+
+
 
 main()
