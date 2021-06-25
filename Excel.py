@@ -2,6 +2,7 @@ import pandas as pd
 #import nltk
 import string
 import re
+from openpyxl import load_workbook
 from nltk.corpus import stopwords
 #from sklearn.feature_extraction.text import CountVectorizer
 
@@ -24,6 +25,9 @@ LUK = df['Læringsutbytte - Kunnskap'].apply(text_process)
 LUF = df['Læringsutbytte - Ferdigheter'].apply(text_process)
 LUG = df['Læringsutbytte - Generell Kompetanse'].apply(text_process)
 
+wb = load_workbook(filename='resultat.xlsx')
+ws = wb.active
+wb.save(filename='resultat.xlsx')
 
 Emnekode = df['Emnekode']
 
@@ -48,12 +52,18 @@ def search_in_frame(frame, k):
     print(str(count)+' treff av 48 mulige\n') #printer ut antall treff
     md.write(str(count)+' treff av 48 mulige\n\n')
     count_max += count #legger til dette i max-count for keyword
-
-    if str(frame) == str(LUG): #sjekker at det er siste frame
+    if str(frame) == str(LUK):
+        ws.cell(k+2,2,count)
+    elif str(frame) == str(LUF):
+       ws.cell(k+2,3,count)
+    else: #sjekker at det er siste frame
         print(str(count_max)+' treff av totalt 144 mulige på søkeordet: '+keywords[k]) #printer ut max_count
         md.write(str(count_max)+' treff av totalt 144 mulige på søkeordet: '+keywords[k]+'\n')
+        ws.cell(k+2,4,count)
+        ws.cell(k+2,5,count_max)
         actual_max += count_max
         count_max = 0
+       
 
 def wordsearch(k):
     p = 0   #indeks for frame
@@ -84,12 +94,22 @@ def main():
     for _ in keywords:
         print('\n'+keywords[k]+':')
         md.write('\n'+keywords[k]+':\n')
+        ws.cell(column = 1, row = k+2).value = keywords[k]
         wordsearch(k) #kjører søk
         k = k + 1 #neste søkeord
 
     max_mulige = 144 * len(keywords)
     print('\n\n'+str(actual_max)+' treff av totalt '+str(max_mulige)+' mulige.')
-    md.write('\n\n'+str(actual_max)+' treff av totalt '+str(max_mulige)+' mulige!.')    
-        
+    md.write('\n\n'+str(actual_max)+' treff av totalt '+str(max_mulige)+' mulige!.')
+    ws.cell(2,7,actual_max)
+    ws.cell(2,13,max_mulige)
+
+    for _ in range(ws.max_row): 
+        if ws.cell(1,len(keywords)+2) != None:
+            ws.delete_rows(len(keywords)+2)
+            
+              
+
+    wb.save(filename='resultat.xlsx')    
 
 main()
