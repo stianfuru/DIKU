@@ -44,26 +44,27 @@ def search_in_frame(frame, k):
             i = i + 1
             continue
         i = i + 1
-    print(str(count)+' treff av 48 mulige\n')
+    print(str(count)+' treff av 48 mulige\n') #sprinter ut antall treff
     md.write(str(count)+' treff av 48 mulige\n\n')
-    count_max += count
-    if str(frame) == str(LUG):
-        print(str(count_max)+' treff av totalt 144 mulige på søkeordet: '+keywords[k])
+    count_max += count #legger til dette i max-count for keyword
+
+    if str(frame) == str(LUG): #sjekker at det er siste frame
+        print(str(count_max)+' treff av totalt 144 mulige på søkeordet: '+keywords[k]) #printer ut max_count
         md.write(str(count_max)+' treff av totalt 144 mulige på søkeordet: '+keywords[k]+'\n')
         count_max = 0
 
 def wordsearch(k):
     p = 0   #indeks for frame
     for _ in range(3):
-        if p == 0:
+        if p == 0: #går første gjennom LUK
             print('LUK:')
             md.write('LUK: \n')
             search_in_frame(LUK, k)
-        elif p == 1:
+        elif p == 1: #så LUF
             print('LUF:')
             md.write('LUF: \n')
             search_in_frame(LUF, k)
-        else: 
+        else: #til sist LUG
             print('LUG:')
             md.write('LUG: \n')
             search_in_frame(LUG, k)
@@ -80,8 +81,8 @@ def main():
     for _ in keywords:
         print('\n'+keywords[k]+':')
         md.write('\n'+keywords[k]+':\n')
-        wordsearch(k)
-        k = k + 1
+        wordsearch(k) #kjører søk
+        k = k + 1 #neste søkeord
         
 
 main()
