@@ -23,7 +23,7 @@ LUG:
 
 0 treff av totalt 144 mulige på søkeordet: virtuell
 
- vr :
+ VR[- ]:
 LUK: 
 0 treff av 48 mulige
 
@@ -33,9 +33,9 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
-0 treff av totalt 144 mulige på søkeordet:  vr 
+0 treff av totalt 144 mulige på søkeordet:  VR[- ]
 
- ar :
+ AR[- ]:
 LUK: 
 0 treff av 48 mulige
 
@@ -45,9 +45,9 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
-0 treff av totalt 144 mulige på søkeordet:  ar 
+0 treff av totalt 144 mulige på søkeordet:  AR[- ]
 
- xr :
+ XR[- ]:
 LUK: 
 0 treff av 48 mulige
 
@@ -57,7 +57,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
-0 treff av totalt 144 mulige på søkeordet:  xr 
+0 treff av totalt 144 mulige på søkeordet:  XR[- ]
 
 hololens:
 LUK: 
@@ -119,7 +119,7 @@ LUG:
 
 0 treff av totalt 144 mulige på søkeordet: trimble
 
- bim[- ]:
+ BIM[- ]:
 LUK: 
 BYTS1401: Studenten kan prinsippene for tegningsfremstilling manuelt og ved hjelp av moderne BIM-verktøy har kunnskap om aktuelle konstruksjonsløsninger og materialer med hovedvekt på småhusbebyggelse i tre har kunnskap om strukturell oppbygging av NS 3420 og NS 3451
 
@@ -141,7 +141,7 @@ EMPE2500: Studenten kan utføre grunnleggende beregninger av varmetransport U-ver
 LUG: 
 0 treff av 48 mulige
 
-6 treff av totalt 144 mulige på søkeordet:  bim[- ]
+6 treff av totalt 144 mulige på søkeordet:  BIM[- ]
 
 digital samhand:
 LUK: 
@@ -231,7 +231,7 @@ LUG:
 
 0 treff av totalt 144 mulige på søkeordet: kunstlig intelligens
 
- ice :
+ ICE[- ]:
 LUK: 
 0 treff av 48 mulige
 
@@ -241,9 +241,9 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
-0 treff av totalt 144 mulige på søkeordet:  ice 
+0 treff av totalt 144 mulige på søkeordet:  ICE[- ]
 
- vdc :
+ VDC[- ]:
 LUK: 
 0 treff av 48 mulige
 
@@ -253,9 +253,9 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
-0 treff av totalt 144 mulige på søkeordet:  vdc 
+0 treff av totalt 144 mulige på søkeordet:  VDC[- ]
 
-concurrent:
+samtidig prosjektering:
 LUK: 
 0 treff av 48 mulige
 
@@ -265,9 +265,9 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
-0 treff av totalt 144 mulige på søkeordet: concurrent
+0 treff av totalt 144 mulige på søkeordet: samtidig prosjektering
 
-engineering:
+ IPD[- ]:
 LUK: 
 0 treff av 48 mulige
 
@@ -277,19 +277,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
-0 treff av totalt 144 mulige på søkeordet: engineering
-
- ipd :
-LUK: 
-0 treff av 48 mulige
-
-LUF: 
-0 treff av 48 mulige
-
-LUG: 
-0 treff av 48 mulige
-
-0 treff av totalt 144 mulige på søkeordet:  ipd 
+0 treff av totalt 144 mulige på søkeordet:  IPD[- ]
 
 lean:
 LUK: 
@@ -315,7 +303,7 @@ LUG:
 
 0 treff av totalt 144 mulige på søkeordet: maskinlæring
 
- ai :
+ AI[- ]:
 LUK: 
 0 treff av 48 mulige
 
@@ -325,9 +313,9 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
-0 treff av totalt 144 mulige på søkeordet:  ai 
+0 treff av totalt 144 mulige på søkeordet:  AI[- ]
 
- ifc :
+ IFC[- ]:
 LUK: 
 0 treff av 48 mulige
 
@@ -337,7 +325,7 @@ LUF:
 LUG: 
 0 treff av 48 mulige
 
-0 treff av totalt 144 mulige på søkeordet:  ifc 
+0 treff av totalt 144 mulige på søkeordet:  IFC[- ]
 
 
-26 treff av totalt 3456 mulige!.
+26 treff av totalt 3312 mulige.

@@ -10,9 +10,9 @@ df = pd.read_excel('Diku.xlsx', sheet_name='DIKU', usecols='B,C,O,P,Q')
 df.dropna(inplace = True)
 
 #kolonner = ['Læringsutbytte - Kunnskap','Læringsutbytte - Ferdigheter','Læringsutbytte - Generell Kompetanse']
-keywords = ['digital tvilling', 'virtuell', ' vr[- ]', ' ar[- ]', ' xr[- ]','hololens','big room','revit','programmvare','trimble'
-,' bim[- ]','digital samhand','digitalisering','modell','kunstlig intelligens',' ice[- ]',' vdc[- ]','concurrent','engineering'
-,' ipd[- ]','lean', 'maskinlæring',' ai[- ]',' ifc[- ]'] #søkeord
+keywords = ['digital tvilling', 'virtuell', ' VR[- ]', ' AR[- ]', ' XR[- ]','hololens','big room','revit','programmvare','trimble'
+,' BIM[- ]','digital samhand','digitalisering','modell','kunstlig intelligens',' ICE[- ]',' VDC[- ]','samtidig prosjektering'
+,' IPD[- ]','lean', 'maskinlæring',' AI[- ]',' IFC[- ]'] #søkeord
 
 
 def text_process(frame): 
@@ -100,7 +100,7 @@ def main():
     max_mulige = 144 * len(keywords)
 
     print('\n\n'+str(actual_max)+' treff av totalt '+str(max_mulige)+' mulige.')
-    md.write('\n\n'+str(actual_max)+' treff av totalt '+str(max_mulige)+' mulige!.')
+    md.write('\n\n'+str(actual_max)+' treff av totalt '+str(max_mulige)+' mulige.')
     ws.cell(2,7,actual_max)
     ws.cell(2,13,max_mulige)
 
