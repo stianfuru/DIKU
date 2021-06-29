@@ -120,3 +120,6 @@ def main():
 
 
 main()
+
+
+#TO-DO: hvis det er treff på søkeord, lag ark for søke ordet med emnekode som det er treff på
