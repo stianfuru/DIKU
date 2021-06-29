@@ -10,12 +10,13 @@ df = pd.read_excel('Diku.xlsx', sheet_name='DIKU', usecols='B,C,O,P,Q')
 df.dropna(inplace = True)
 
 #kolonner = ['Læringsutbytte - Kunnskap','Læringsutbytte - Ferdigheter','Læringsutbytte - Generell Kompetanse']
-keywords = ['digital tvilling', 'virtuell', ' vr ', ' ar ', ' xr ','hololens','big room','revit','programmvare','trimble'
-,' bim ','digital samhand','digitalisering','modell','kunstlig intelligens',' ice ',' vdc ','concurrent','engineering',' ipd ','lean', 'maskinlæring',' ai ',' ifc '] #søkeord
+keywords = ['digital tvilling', 'virtuell', ' vr[- ]', ' ar[- ]', ' xr[- ]','hololens','big room','revit','programmvare','trimble'
+,' bim[- ]','digital samhand','digitalisering','modell','kunstlig intelligens',' ice[- ]',' vdc[- ]','concurrent','engineering'
+,' ipd[- ]','lean', 'maskinlæring',' ai[- ]',' ifc[- ]'] #søkeord
 
 
-def text_process(frame):
-    nopunc = [char for char in frame if char not in string.punctuation]
+def text_process(frame): 
+    nopunc = [char for char in frame if char not in """!"#$%&'()*+,./:;<=>?@[\]^_`{|}~'"""]
     nopunc = ''.join(nopunc)   
     nopunc = [word for word in nopunc.split() if word.lower not in stopwords.words('norwegian')]
     return nopunc
