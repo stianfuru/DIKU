@@ -14,9 +14,10 @@ keywords = ['digital tvilling', 'virtuell', ' VR[- ]', ' AR[- ]', ' XR[- ]','hol
 ,' BIM[- ]','digital samhand','digitalisering','modell','kunstlig intelligens',' ICE[- ]',' VDC[- ]','samtidig prosjektering'
 ,' IPD[- ]','lean', 'maskinlæring',' AI[- ]',' IFC[- ]'] #søkeord
 
+tegnsetting = """!"#$%&'()*+,./:;<=>?@[\]^_`{|}~'"""
 
 def text_process(frame): 
-    nopunc = [char for char in frame if char not in """!"#$%&'()*+,./:;<=>?@[\]^_`{|}~'"""]
+    nopunc = [char for char in frame if char not in tegnsetting]
     nopunc = ''.join(nopunc)   
     nopunc = [word for word in nopunc.split() if word.lower not in stopwords.words('norwegian')]
     return nopunc
@@ -104,7 +105,7 @@ def main():
     ws.cell(2,7,actual_max)
     ws.cell(2,13,max_mulige)
 
-    for _ in range(ws.max_row): #fjerner ord som ikke er i keywords
+    for _ in range(ws.max_row): #fjerner ord fra excel-arket som ikke er i keywords
         if ws.cell(1,len(keywords)+2) != None:
             ws.delete_rows(len(keywords)+2)
             
