@@ -92,9 +92,15 @@ def main():
     k = 0 #indeks for keyword
 
     for _ in keywords:
-        print('\n'+keywords[k]+':')
-        md.write('\n'+keywords[k]+':\n')
-        ws.cell(k+2,1,keywords[k])
+        if keywords[k].startswith(' '):
+            x = keywords[k].replace(' ','',1)
+            print('\n'+x+':')
+            md.write('\n'+x+':\n')
+            ws.cell(k+2,1,x)
+        else:
+            print('\n'+keywords[k]+':')
+            md.write('\n'+keywords[k]+':\n')
+            ws.cell(k+2,1,keywords[k])
         wordsearch(k) #kjører søk
         k = k + 1 #neste søkeord
 

@@ -23,7 +23,7 @@ LUG:
 
 0 treff av totalt 144 mulige på søkeordet: virtuell
 
- VR[- ]:
+VR[- ]:
 LUK: 
 0 treff av 48 mulige
 
@@ -35,7 +35,7 @@ LUG:
 
 0 treff av totalt 144 mulige på søkeordet:  VR[- ]
 
- AR[- ]:
+AR[- ]:
 LUK: 
 0 treff av 48 mulige
 
@@ -47,7 +47,7 @@ LUG:
 
 0 treff av totalt 144 mulige på søkeordet:  AR[- ]
 
- XR[- ]:
+XR[- ]:
 LUK: 
 0 treff av 48 mulige
 
@@ -119,7 +119,7 @@ LUG:
 
 0 treff av totalt 144 mulige på søkeordet: trimble
 
- BIM[- ]:
+BIM[- ]:
 LUK: 
 BYTS1401: Studenten kan prinsippene for tegningsfremstilling manuelt og ved hjelp av moderne BIM-verktøy har kunnskap om aktuelle konstruksjonsløsninger og materialer med hovedvekt på småhusbebyggelse i tre har kunnskap om strukturell oppbygging av NS 3420 og NS 3451
 
@@ -231,7 +231,7 @@ LUG:
 
 0 treff av totalt 144 mulige på søkeordet: kunstlig intelligens
 
- ICE[- ]:
+ICE[- ]:
 LUK: 
 0 treff av 48 mulige
 
@@ -243,7 +243,7 @@ LUG:
 
 0 treff av totalt 144 mulige på søkeordet:  ICE[- ]
 
- VDC[- ]:
+VDC[- ]:
 LUK: 
 0 treff av 48 mulige
 
@@ -267,7 +267,7 @@ LUG:
 
 0 treff av totalt 144 mulige på søkeordet: samtidig prosjektering
 
- IPD[- ]:
+IPD[- ]:
 LUK: 
 0 treff av 48 mulige
 
@@ -303,7 +303,7 @@ LUG:
 
 0 treff av totalt 144 mulige på søkeordet: maskinlæring
 
- AI[- ]:
+AI[- ]:
 LUK: 
 0 treff av 48 mulige
 
@@ -315,7 +315,7 @@ LUG:
 
 0 treff av totalt 144 mulige på søkeordet:  AI[- ]
 
- IFC[- ]:
+IFC[- ]:
 LUK: 
 0 treff av 48 mulige
 
