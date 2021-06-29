@@ -10,7 +10,7 @@ df = pd.read_excel('Diku.xlsx', sheet_name='DIKU', usecols='B,C,O,P,Q')
 df.dropna(inplace = True)
 
 #kolonner = ['Læringsutbytte - Kunnskap','Læringsutbytte - Ferdigheter','Læringsutbytte - Generell Kompetanse']
-keywords = ['digital tvilling', 'virtuell', ' VR[- ]', ' AR[- ]', ' XR[- ]','hololens','big room','revit','programmvare','trimble'
+keywords = ['digital tvilling','virtuell',' VR[- ]',' AR[- ]',' XR[- ]','hololens','big room','revit','programmvare','trimble'
 ,' BIM[- ]','digital samhand','digitalisering','modell','kunstlig intelligens',' ICE[- ]',' VDC[- ]','samtidig prosjektering'
 ,' IPD[- ]','lean', 'maskinlæring',' AI[- ]',' IFC[- ]'] #søkeord
 
@@ -22,7 +22,7 @@ def text_process(frame):
     nopunc = [word for word in nopunc.split() if word.lower not in stopwords.words('norwegian')]
     return nopunc
 
-#tokeized og prosessert versjon av læringsutbytte kolonnene
+#tokenized og prosessert versjon av læringsutbytte kolonnene
 LUK = df['Læringsutbytte - Kunnskap'].apply(text_process)
 LUF = df['Læringsutbytte - Ferdigheter'].apply(text_process)
 LUG = df['Læringsutbytte - Generell Kompetanse'].apply(text_process)
@@ -51,7 +51,7 @@ def search_in_frame(frame, k):
         search = re.search(keywords[k].lower(),arraystr.lower()) #søkefunskjon
         if str(search) != 'None': #sjekker at det er match                                  
             print(Emnekode[i]+': '+arraystr+'\n') #printer ut emnekode og meldingen
-            md.write(Emnekode[i]+': '+arraystr+'\n\n') #skriver det samme til resultat.m
+            md.write(Emnekode[i]+': '+arraystr+'\n\n') #skriver det samme til resultat.md
             count = count + 1
             i = i + 1
             continue
