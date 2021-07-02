@@ -94,12 +94,22 @@ def search_in_frame(frame, k):
             else:
                 ws2.cell(count+3,7, Emnekode[i])
                 ws2.cell(count+3,8, Emnenavn[i])
-                ws2.cell(count+3,3, arraystr)
+                ws2.cell(count+3,9, arraystr)
 
             for row in ws2.iter_rows():
                 for cell in row:
                     cell.alignment = Alignment(wrap_text=True, vertical='top')
-            
+            ws2.column_dimensions['A'].width = 15
+            ws2.column_dimensions['D'].width = 15
+            ws2.column_dimensions['G'].width = 15
+
+            ws2.column_dimensions['B'].width = 15
+            ws2.column_dimensions['E'].width = 15
+            ws2.column_dimensions['H'].width = 15
+
+            ws2.column_dimensions['C'].width = 50
+            ws2.column_dimensions['F'].width = 50
+            ws2.column_dimensions['I'].width = 50
 
             print(Emnekode[i]+': '+arraystr+'\n') #printer ut emnekode og meldingen
             md.write(Emnekode[i]+': '+arraystr+'\n\n') #skriver det samme til resultat.md
