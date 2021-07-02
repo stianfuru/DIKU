@@ -3,6 +3,8 @@ import pandas as pd
 import string
 import re
 from openpyxl import load_workbook
+from openpyxl.styles import Alignment, Font
+from openpyxl.cell import Cell
 from nltk.corpus import stopwords
 #from sklearn.feature_extraction.text import CountVectorizer
 
@@ -94,9 +96,9 @@ def search_in_frame(frame, k):
                 ws2.cell(count+3,8, Emnenavn[i])
                 ws2.cell(count+3,3, arraystr)
 
-           # for row in ws2.iter_rows():
-               # for cell in row:
-                #    cell.alignment = Alignment(wrap_text=True, vertical='top')
+            for row in ws2.iter_rows():
+                for cell in row:
+                    cell.alignment = Alignment(wrap_text=True, vertical='top')
             
 
             print(Emnekode[i]+': '+arraystr+'\n') #printer ut emnekode og meldingen
