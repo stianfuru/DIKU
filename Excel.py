@@ -31,6 +31,7 @@ wb = load_workbook(filename='resultat.xlsx')
 ws = wb['Statistikk']
 wb.save(filename='resultat.xlsx')
 Emnekode = df['Emnekode']
+Emnenavn = df['Emnenavn']
 
 count_max = 0
 actual_max = 0
@@ -65,18 +66,38 @@ def search_in_frame(frame, k):
             if createsheet == True: #lager ny sheet hvis den ikke fantes               
                 ws2 = wb.create_sheet(title)
                 ws2.cell(1,1, 'LUK:')
-                ws2.cell(1,2, 'LUK:')
-                ws2.cell(1,3, 'LUK:')
+                ws2.cell(2,1, 'Emnekode:')
+                ws2.cell(2,2,'Emnenavn:')
+                ws2.cell(2,3, 'Læringsutbytte')
+                ws2.cell(1,4, 'LUF:')
+                ws2.cell(2,4, 'Emnekode:')
+                ws2.cell(2,5,'Emnenavn:')
+                ws2.cell(2,6, 'Læringsutbytte')
+                ws2.cell(1,7, 'LUG:')
+                ws2.cell(2,7, 'Emnekode:')
+                ws2.cell(2,8,'Emnenavn:')
+                ws2.cell(2,9, 'Læringsutbytte')
             else:
                 ws2 = wb[title]
 
             #skriver til nye sheets
             if str(frame) == str(LUK):
-                ws2.cell(count+2,1, Emnekode[i])
+                ws2.cell(count+3,1, Emnekode[i])
+                ws2.cell(count+3,2, Emnenavn[i])
+                ws2.cell(count+3,3, arraystr)
             elif str(frame) == str(LUF):
-                ws2.cell(count+2,2, Emnekode[i])
+                ws2.cell(count+3,4, Emnekode[i])
+                ws2.cell(count+3,5, Emnenavn[i])
+                ws2.cell(count+3,6, arraystr)
             else:
-                ws2.cell(count+2,3, Emnekode[i])
+                ws2.cell(count+3,7, Emnekode[i])
+                ws2.cell(count+3,8, Emnenavn[i])
+                ws2.cell(count+3,3, arraystr)
+
+           # for row in ws2.iter_rows():
+               # for cell in row:
+                #    cell.alignment = Alignment(wrap_text=True, vertical='top')
+            
 
             print(Emnekode[i]+': '+arraystr+'\n') #printer ut emnekode og meldingen
             md.write(Emnekode[i]+': '+arraystr+'\n\n') #skriver det samme til resultat.md
