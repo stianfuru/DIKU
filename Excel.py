@@ -54,7 +54,7 @@ def search_in_frame(frame, k):
             if "[- ]" in title:
                     title = title.replace('[- ]','')
             
-            for sheet in wb.worksheets:
+            for sheet in wb.worksheets: #sjekker om sheet med match allerede finnes
                 createsheet = True
                 if sheet.title == title:
                     createsheet = False
@@ -62,7 +62,7 @@ def search_in_frame(frame, k):
                 else:
                     continue
 
-            if createsheet == True:                
+            if createsheet == True: #lager ny sheet hvis den ikke fantes               
                 ws2 = wb.create_sheet(title)
                 ws2.cell(1,1, 'LUK:')
                 ws2.cell(1,2, 'LUK:')
@@ -70,6 +70,7 @@ def search_in_frame(frame, k):
             else:
                 ws2 = wb[title]
 
+            #skriver til nye sheets
             if str(frame) == str(LUK):
                 ws2.cell(count+2,1, Emnekode[i])
             elif str(frame) == str(LUF):
@@ -84,6 +85,7 @@ def search_in_frame(frame, k):
             i = i + 1
             continue
         i = i + 1
+        
     print(str(count)+' treff av 48 mulige\n') #printer ut antall treff
     md.write(str(count)+' treff av 48 mulige\n\n')
     count_max += count #legger til dette i max-count for keyword
@@ -118,7 +120,7 @@ def wordsearch(k):
 
 def main():
 
-    for sheet in wb.worksheets:
+    for sheet in wb.worksheets: #sletter alle sheets bortsett fra første
         if sheet.title == 'Statistikk':
             continue
         else:
@@ -126,7 +128,7 @@ def main():
 
     k = 0 #indeks for keyword
 
-    for _ in keywords:
+    for _ in keywords: #rydding
         if keywords[k].startswith(' '):
             x = keywords[k].replace(' ','',1)
             print('\n'+x+':')
