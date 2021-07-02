@@ -28,9 +28,8 @@ LUF = df['Læringsutbytte - Ferdigheter'].apply(text_process)
 LUG = df['Læringsutbytte - Generell Kompetanse'].apply(text_process)
 
 wb = load_workbook(filename='resultat.xlsx')
-ws = wb.active
+ws = wb['Statistikk']
 wb.save(filename='resultat.xlsx')
-
 Emnekode = df['Emnekode']
 
 count_max = 0
@@ -50,8 +49,37 @@ def search_in_frame(frame, k):
         arraystr = ' '.join(map(str, frame[i])) #setter sammen igjen meldingen for printing 
         search = re.search(keywords[k].lower(),arraystr.lower()) #søkefunskjon
         if str(search) != 'None': #sjekker at det er match                                  
+            
+            title = keywords[k]
+            if "[- ]" in title:
+                    title = title.replace('[- ]','')
+            
+            for sheet in wb.worksheets:
+                createsheet = True
+                if sheet.title == title:
+                    createsheet = False
+                    break
+                else:
+                    continue
+
+            if createsheet == True:                
+                ws2 = wb.create_sheet(title)
+                ws2.cell(1,1, 'LUK:')
+                ws2.cell(1,2, 'LUK:')
+                ws2.cell(1,3, 'LUK:')
+            else:
+                ws2 = wb[title]
+
+            if str(frame) == str(LUK):
+                ws2.cell(count+2,1, Emnekode[i])
+            elif str(frame) == str(LUF):
+                ws2.cell(count+2,2, Emnekode[i])
+            else:
+                ws2.cell(count+2,3, Emnekode[i])
+
             print(Emnekode[i]+': '+arraystr+'\n') #printer ut emnekode og meldingen
             md.write(Emnekode[i]+': '+arraystr+'\n\n') #skriver det samme til resultat.md
+                  
             count = count + 1
             i = i + 1
             continue
@@ -89,6 +117,13 @@ def wordsearch(k):
         p = p + 1
 
 def main():
+
+    for sheet in wb.worksheets:
+        if sheet.title == 'Statistikk':
+            continue
+        else:
+            wb.remove(sheet)
+
     k = 0 #indeks for keyword
 
     for _ in keywords:
@@ -101,6 +136,8 @@ def main():
             print('\n'+keywords[k]+':')
             md.write('\n'+keywords[k]+':\n')
             ws.cell(k+2,1,keywords[k])
+            
+        
         wordsearch(k) #kjører søk
         k = k + 1 #neste søkeord
 
@@ -120,6 +157,3 @@ def main():
 
 
 main()
-
-
-#TO-DO: hvis det er treff på søkeord, lag ark for søke ordet med emnekode som det er treff på
