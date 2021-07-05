@@ -13,8 +13,8 @@ df.dropna(inplace = True)
 
 #kolonner = ['Læringsutbytte - Kunnskap','Læringsutbytte - Ferdigheter','Læringsutbytte - Generell Kompetanse']
 keywords = ['digital tvilling','virtuell',' VR[- ]',' AR[- ]',' XR[- ]','hololens','big room','revit','programmvare','trimble'
-,' BIM[- ]','digital samhand','digitalisering','modell','kunstlig intelligens',' ICE[- ]',' VDC[- ]','samtidig prosjektering'
-,' IPD[- ]','lean', 'maskinlæring',' AI[- ]',' IFC[- ]'] #søkeord
+,' BIM[- ]','digital samhand','digital','modell','kunstlig intelligens',' ICE[- ]',' VDC[- ]','samtidig prosjektering'
+,' IPD[- ]','lean', 'maskinlæring',' AI[- ]',' IFC[- ]','maker','samarbeid','teknologi','studentaktiv','problembasert','programm','script'] #søkeord
 
 tegnsetting = """!"#$%&'()*+,./:;<=>?@[\]^_`{|}~'"""
 
@@ -34,6 +34,8 @@ ws = wb['Statistikk']
 wb.save(filename='resultat.xlsx')
 Emnekode = df['Emnekode']
 Emnenavn = df['Emnenavn']
+
+max_row = len(df)
 
 count_max = 0
 actual_max = 0
@@ -103,9 +105,9 @@ def search_in_frame(frame, k):
             ws2.column_dimensions['D'].width = 15
             ws2.column_dimensions['G'].width = 15
 
-            ws2.column_dimensions['B'].width = 15
-            ws2.column_dimensions['E'].width = 15
-            ws2.column_dimensions['H'].width = 15
+            ws2.column_dimensions['B'].width = 20
+            ws2.column_dimensions['E'].width = 20
+            ws2.column_dimensions['H'].width = 20
 
             ws2.column_dimensions['C'].width = 50
             ws2.column_dimensions['F'].width = 50
@@ -119,16 +121,16 @@ def search_in_frame(frame, k):
             continue
         i = i + 1
         
-    print(str(count)+' treff av 48 mulige\n') #printer ut antall treff
-    md.write(str(count)+' treff av 48 mulige\n\n')
+    print(str(count)+' treff av '+str(max_row)+' mulige\n') #printer ut antall treff
+    md.write(str(count)+' treff av '+str(max_row)+' mulige\n')
     count_max += count #legger til dette i max-count for keyword
     if str(frame) == str(LUK):
         ws.cell(k+2,2,count) #skriver til excel ark
     elif str(frame) == str(LUF):
        ws.cell(k+2,3,count)
     else: #sjekker at det er siste frame
-        print(str(count_max)+' treff av totalt 144 mulige på søkeordet: '+keywords[k]) #printer ut max_count
-        md.write(str(count_max)+' treff av totalt 144 mulige på søkeordet: '+keywords[k]+'\n')
+        print(str(count_max)+' treff av totalt '+str((max_row*3))+' mulige på søkeordet: '+keywords[k]) #printer ut max_count
+        md.write(str(count_max)+' treff av totalt '+str((max_row*3))+' mulige på søkeordet: '+keywords[k]+'\n')
         ws.cell(k+2,4,count)
         ws.cell(k+2,5,count_max)
         actual_max += count_max
@@ -176,7 +178,7 @@ def main():
         wordsearch(k) #kjører søk
         k = k + 1 #neste søkeord
 
-    max_mulige = 144 * len(keywords)
+    max_mulige = (max_row*3) * len(keywords)
 
     print('\n\n'+str(actual_max)+' treff av totalt '+str(max_mulige)+' mulige.')
     md.write('\n\n'+str(actual_max)+' treff av totalt '+str(max_mulige)+' mulige.')
