@@ -29,6 +29,7 @@ LUK = df['Læringsutbytte - Kunnskap'].apply(text_process)
 LUF = df['Læringsutbytte - Ferdigheter'].apply(text_process)
 LUG = df['Læringsutbytte - Generell Kompetanse'].apply(text_process)
 
+
 wb = load_workbook(filename='resultat.xlsx')
 ws = wb['Statistikk']
 wb.save(filename='resultat.xlsx')
