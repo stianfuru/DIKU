@@ -182,11 +182,11 @@ def main():
 
     print('\n\n'+str(actual_max)+' treff av totalt '+str(max_mulige)+' mulige.')
     md.write('\n\n'+str(actual_max)+' treff av totalt '+str(max_mulige)+' mulige.')
+    ws.cell(2,7,actual_max)
     ws.cell(2,9,max_row)
     ws.cell(2,10,max_row)
     ws.cell(2,11,max_row)
     ws.cell(2,12,max_row*3)
-    ws.cell(2,7,actual_max*3)
     ws.cell(2,13,max_mulige)
 
     for _ in range(ws.max_row): #fjerner ord fra excel-arket som ikke er i keywords
