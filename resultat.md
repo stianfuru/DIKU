@@ -71,14 +71,24 @@ LUG:
 0 treff av 42 mulige
 0 treff av totalt 126 mulige på søkeordet: revit
 
-programmvare:
+programvare:
 LUK: 
 0 treff av 42 mulige
 LUF: 
-0 treff av 42 mulige
+BYVE3401: Studenten kan utarbeide en reguleringsplan med tilhørende reguleringsbestemmelser og planbeskrivelse i samsvar med Miljøverndepartementets veiledning for reguleringsplaner samt overordnede føringer prinsippene for utforming av reguleringsplaner ved bruk av egnet programvare NovaPoint Areal Focus Arealplanlegging eller tilsvarende med tilhørende tekniske planer for Veg VA plantegning lengdeprofiler og tverrprofiler utføre konsekvensanalyser for områdereguleringsplan og ROS-analyse for detaljreguleringsplan utføre grunnleggende trafikktekniske beregninger og analyser
+
+EMPE1500: Studenten kan identifisere krefter og beregne kraftmomenter anvende Newtons 2 lov og spinnsatsen på konkrete fysiske problemer beskrive bevegelse matematisk blant annet ved hjelp av egnet programvare løse likevektproblemer for stive legemer
+
+EMPE2500: Studenten kan utføre grunnleggende beregninger av varmetransport U-verdier kuldebro infiltrasjon og av effekt- og energibehovs med enkle formelverk håndtere bygningsinformasjonsmodeller BIM deriblant overføre data til programvare for simulering og miljøvurdering utføre dynamisk modellering av bygnings- og klimatekniske systemer for optimalt inneklima effekt- og energibehov ved bruk av simuleringsprogrammer som SIMIEN TEK-sjekk eller tilsvarende utføre energimerking av bygg vurdere inneklima termisk komfort og dagslysforhold utfra beregningene
+
+EMTS2600: Studenten kan vurdere usikkerhet i alle typer målinger av inneklimaparametere og sette opp et usikkerhetsbudsjett håndtere spørreundersøkelser om inneklima ved hjelp av «Ørebroskjemaet» og tolke resultatet beregne nødvendige luftmengder ut ifra massebalanser og reaksjonskinetikk utføre målinger av inneklimaparametere som luftskifte luftkvalitet termiske akustiske og aktiniske forhold inkludert radon og sammenlikne dem med myndighetskrav vurdere materialbruken med hensyn på inneklimakvalitet og miljøbelastning foreta en mikrobiologisk analyse av en bygning spesielt med hensyn på muggsopp bruke Mollierediagram for å beregne duggpunkt og andre termodynamiske data for fuktig luft anvende programvare for inneklimasimuleringer designe for optimalt vedlikehold for å unngå Legionellavekst i varmtvannssystemer og kjøletårn designe våtrom
+
+EMVE3500: Studenten kan velge energikilderenergiforsyning som tilfredsstiller myndighetskrav gjennomføre energi- og inneklimaberegninger med relevant programvare utarbeide kravspesifikasjon for oppvarmingssystemer prosjekteredimensjonere energieffektive vannbårne oppvarmingsanlegg prosjekteredimensjonere energieffektive kjølesystemer utarbeide kravspesifikasjon for ventilasjonssystemer prosjekteredimensjonere energieffektive ventilasjonsanlegg herunder aggregat og kanalnett prosjekteredimensjonere ventilasjonsløsninger på rom nivå som gir akseptabelt inneklima med hensyn på temperatur trekk luftkvalitet og lyd prosjekteredimensjonere sanitærtekniske installasjoner innomhus vannforsyning og avløp prosjekteredimensjonere varmtvannsforsyningsanlegg
+
+5 treff av 42 mulige
 LUG: 
 0 treff av 42 mulige
-0 treff av totalt 126 mulige på søkeordet: programmvare
+5 treff av totalt 126 mulige på søkeordet: programvare
 
 trimble:
 LUK: 
@@ -376,4 +386,4 @@ LUG:
 0 treff av totalt 126 mulige på søkeordet: script
 
 
-53 treff av totalt 3780 mulige.
+58 treff av totalt 3780 mulige.

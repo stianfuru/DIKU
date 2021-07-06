@@ -12,7 +12,7 @@ df = pd.read_excel('Diku.xlsx', sheet_name='DIKU', usecols='B,C,O,P,Q')
 df.dropna(inplace = True)
 
 #kolonner = ['Læringsutbytte - Kunnskap','Læringsutbytte - Ferdigheter','Læringsutbytte - Generell Kompetanse']
-keywords = ['digital tvilling','virtuell',' VR[- ]',' AR[- ]',' XR[- ]','hololens','big room','revit','programmvare','trimble'
+keywords = ['digital tvilling','virtuell',' VR[- ]',' AR[- ]',' XR[- ]','hololens','big room','revit','programvare','trimble'
 ,' BIM[- ]','digital samhand','digital','modell','kunstlig intelligens',' ICE[- ]',' VDC[- ]','samtidig prosjektering'
 ,' IPD[- ]','lean', 'maskinlæring',' AI[- ]',' IFC[- ]','maker','samarbeid','teknologi','studentaktiv','problembasert','programm','script'] #søkeord
 
