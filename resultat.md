@@ -139,10 +139,12 @@ LUF:
 LUG: 
 BYPE2200: Studenten forstår og kan bruke geografisk informasjon til planlegging utførelse og kontroll av byggevirksomhet ved hjelp av digitalt utstyr som totalstasjon og GPS og kan bruke relevante dataprogrammer til å tolke resultatene Studenten kan kontrollere dette med manuelle beregninger benytter statistiske tenkemåter på ingeniørproblemstillinger og formidler disse skriftlig og muntlig løser ingeniørproblemstillinger ved sannsynlighetsregning statistisk forsøksplanlegging datainnsamling og analyse
 
+EMFE1000: Studenten kan vurdere resultater fra matematiske beregninger forklare og bruke grunnleggende numeriske algoritmer som inneholder kodeelementene tilordning for- og while-løkker og if-tester skrive presise forklaringer og begrunnelser til framgangsmåter og demonstrere korrekt bruk av matematisk notasjon vurdere egne og andre studenters faglige arbeider og formulere skriftlige og muntlige vurderinger av disse arbeidene på en faglig korrekt og presis måte verføre et praktisk problem fra eget fagområde til matematisk form slik at det kan løses - analytisk eller numerisk bruke matematiske metoder og digitale verktøy som er relevante for eget fagfelt bruke matematikk til å kommunisere om ingeniørfaglige problemstillinger
+
 EMPE2500: Studenten kan vurdere og velge riktig digitalt verktøy for hver type prosjekteringsoppgave jobbe tverrfaglig for å prosjektere optimale løsninger med hensyn til inneklima energikostnader og miljømål formidle resultater fra bygningssimulering muntlig visuelt og skriftlig
 
-2 treff av 42 mulige
-4 treff av totalt 126 mulige på søkeordet: digital
+3 treff av 42 mulige
+5 treff av totalt 126 mulige på søkeordet: digital
 
 modell:
 LUK: 
@@ -168,7 +170,7 @@ BYTS1401: Studenten kan utføre manuelle tegninger av enkle legemer i vanlige pro
 
 DAVE3705: Studentene kan løse høyere ordens lineære differensiallikninger med konstante koeffisienter benytte potensrekker og Frobeniusrekker for å løse 2 ordens lineære differensiallikninger med variable koeffisienter anvende Laplacetransformasjon på løsning av inhomogene lineære differensiallikninger som modellerer svingende systemer bestemme Fourier sinusrekken og Fourier cosinusrekken til symmetrisk utvidete ikkeperiodiske funksjoner løse grenseverdiproblemer knyttet til partielle differensiallikninger på lukkede områder ved separasjon av variable
 
-EMFE1000: Dette krever at studenten kan anvende den deriverte til å modellere og analysere dynamiske systemer stille opp og beregne størrelser hvor integraler inngår drøfte ideene bak noen analytiske og numeriske metoder som brukes for å løse første ordens differensiallikninger sette opp og løse differensiallikninger for praktiske problemer drøfte numeriske metoder for å løse likninger løse likninger med komplekse koeffisienter og komplekse løsninger
+EMFE1000: Studenten kan anvende den deriverte til å modellere og analysere dynamiske systemer diskutere hvordan ideen bak definisjonen av det bestemte integralet kan brukes til å sette opp integraler for beregning av størrelser drøfte ideene bak noen analytiske og numeriske metoder som brukes for å løse differensiallikninger og sette opp og løse differensiallikninger for praktiske problemer som er relevante innen eget fagområde drøfte metoder for å løse lineære likningssystemer ved hjelp av matriseregning og drøfte numeriske metoder for å løse likninger og sette opp og løse likninger for praktiske problemer fra eget fagområde
 
 EMPE2500: Studenten kan utføre grunnleggende beregninger av varmetransport U-verdier kuldebro infiltrasjon og av effekt- og energibehovs med enkle formelverk håndtere bygningsinformasjonsmodeller BIM deriblant overføre data til programvare for simulering og miljøvurdering utføre dynamisk modellering av bygnings- og klimatekniske systemer for optimalt inneklima effekt- og energibehov ved bruk av simuleringsprogrammer som SIMIEN TEK-sjekk eller tilsvarende utføre energimerking av bygg vurdere inneklima termisk komfort og dagslysforhold utfra beregningene
 
@@ -386,4 +388,4 @@ LUG:
 0 treff av totalt 126 mulige på søkeordet: script
 
 
-58 treff av totalt 3780 mulige.
+59 treff av totalt 3780 mulige.
