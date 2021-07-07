@@ -13,7 +13,7 @@ df.dropna(inplace = True) #skal fjerne null-celler
 
 
 keywords = ['digital tvilling','virtuell',' VR[- ]',' AR[- ]',' XR[- ]','hololens','big room','revit','programvare','trimble'
-,' BIM[- ]','digital samhand','digital','modell','kunstlig intelligens',' ICE[- ]',' VDC[- ]','samtidig prosjektering'
+,' BIM[- ]','digital samhand','digital','modell','kunstig intelligens',' ICE[- ]',' VDC[- ]','samtidig prosjektering'
 ,' IPD[- ]','lean', 'maskinlæring',' AI[- ]',' IFC[- ]','maker','samarbeid','teknologi','studentaktiv','problembasert','programm','script'] #søkeord
 
 #string.punctuation uten bindestrek

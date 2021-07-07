@@ -191,14 +191,14 @@ EMVE3700: Studenten kan bidra i arbeidet med å utvikle ny teknologi med bakgrunn
 5 treff av 42 mulige
 18 treff av totalt 126 mulige på søkeordet: modell
 
-kunstlig intelligens:
+kunstig intelligens:
 LUK: 
 0 treff av 42 mulige
 LUF: 
 0 treff av 42 mulige
 LUG: 
 0 treff av 42 mulige
-0 treff av totalt 126 mulige på søkeordet: kunstlig intelligens
+0 treff av totalt 126 mulige på søkeordet: kunstig intelligens
 
 ICE[- ]:
 LUK: 
