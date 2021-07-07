@@ -11,7 +11,7 @@ from nltk.corpus import stopwords
 df = pd.read_excel('Diku.xlsx', sheet_name='DIKU', usecols='B,C,O,P,Q') #leser DIKU-arket
 df.dropna(inplace = True) #skal fjerne null-celler
 
-#kolonner = ['Læringsutbytte - Kunnskap','Læringsutbytte - Ferdigheter','Læringsutbytte - Generell Kompetanse']
+
 keywords = ['digital tvilling','virtuell',' VR[- ]',' AR[- ]',' XR[- ]','hololens','big room','revit','programvare','trimble'
 ,' BIM[- ]','digital samhand','digital','modell','kunstlig intelligens',' ICE[- ]',' VDC[- ]','samtidig prosjektering'
 ,' IPD[- ]','lean', 'maskinlæring',' AI[- ]',' IFC[- ]','maker','samarbeid','teknologi','studentaktiv','problembasert','programm','script'] #søkeord
@@ -53,14 +53,12 @@ md = open("resultat.md", "w+")
 
 def search_in_frame(frame, k):
     i = 0 #indeks for celle
-    count = 0 #teller for et enkelt frame
+    count = 0 #teller for treff i et enkelt frame
     global count_max
     global actual_max
     for _ in frame:
         
-        #bow_transformer = CountVectorizer(analyzer=text_process).fit(frame[i])
-        #unique += (len(bow_transformer.vocabulary_))
-        arraystr = ' '.join(map(str, frame[i])) #setter sammen igjen meldingen for printing 
+        arraystr = ' '.join(map(str, frame[i])) #setter sammen igjen meldingen for printing og søk
         search = re.search(keywords[k].lower(),arraystr.lower()) #søkefunskjon
         if str(search) != 'None': #sjekker at det er match                                  
             
@@ -82,15 +80,15 @@ def search_in_frame(frame, k):
                 ws2.cell(1,1, 'LUK:')
                 ws2.cell(2,1, 'Emnekode:')
                 ws2.cell(2,2,'Emnenavn:')
-                ws2.cell(2,3, 'Læringsutbytte')
+                ws2.cell(2,3, 'Læringsutbytte:')
                 ws2.cell(1,4, 'LUF:')
                 ws2.cell(2,4, 'Emnekode:')
                 ws2.cell(2,5,'Emnenavn:')
-                ws2.cell(2,6, 'Læringsutbytte')
+                ws2.cell(2,6, 'Læringsutbytte:')
                 ws2.cell(1,7, 'LUG:')
                 ws2.cell(2,7, 'Emnekode:')
                 ws2.cell(2,8,'Emnenavn:')
-                ws2.cell(2,9, 'Læringsutbytte')
+                ws2.cell(2,9, 'Læringsutbytte:')
             else: #hvis den fantes så skriver den i riktig ark
                 ws2 = wb[title]
 
@@ -112,7 +110,7 @@ def search_in_frame(frame, k):
                 for cell in row:
                     cell.alignment = Alignment(wrap_text=True, vertical='top')
             
-            #setter widt slik at den er mer leselig
+            #setter width slik at den er mer leselig
             ws2.column_dimensions['A'].width = 15
             ws2.column_dimensions['D'].width = 15
             ws2.column_dimensions['G'].width = 15
@@ -131,20 +129,20 @@ def search_in_frame(frame, k):
             count = count + 1 #+1 i teller
             i = i + 1 #neste celle
             continue
-        i = i + 1 #neste celle hvis det ikke vvar treff
+        i = i + 1 #neste celle hvis det ikke var treff
         
     print(str(count)+' treff av '+str(max_row)+' mulige\n') #printer ut antall treff
     md.write(str(count)+' treff av '+str(max_row)+' mulige\n')
     count_max += count #legger til dette i max-count for keyword
     
-    if str(frame) == str(LUK):
-        ws.cell(k+2,2,count) #skriver til excel ark
-    elif str(frame) == str(LUF):
+    if str(frame) == str(LUK): #skriver count til LUK i statistikk arket
+        ws.cell(k+2,2,count) 
+    elif str(frame) == str(LUF):#skriver count til LUF i statistikk arket
        ws.cell(k+2,3,count)
-    else: #sjekker at det er siste frame
-        print(str(count_max)+' treff av totalt '+str((max_row*3))+' mulige på søkeordet: '+keywords[k]) #printer ut max_count
-        md.write(str(count_max)+' treff av totalt '+str((max_row*3))+' mulige på søkeordet: '+keywords[k]+'\n')
+    else: #skriver count til LUG i statistikk arket og max_count
         ws.cell(k+2,4,count) #skriver til statistikk arket
+        print(str(count_max)+' treff av totalt '+str((max_row*3))+' mulige på søkeordet: '+keywords[k]) #printer ut max_count
+        md.write(str(count_max)+' treff av totalt '+str((max_row*3))+' mulige på søkeordet: '+keywords[k]+'\n')   
         ws.cell(k+2,5,count_max)#skriver til statistikk arket
         actual_max += count_max #legger til count_max til actual_max
         count_max = 0 #resetter count_max
@@ -176,7 +174,7 @@ def main():
 
     k = 0 #indeks for keyword
 
-    for _ in keywords: #rydding i output
+    for _ in keywords: #fjerner mellomrom på starten av ord i output
         if keywords[k].startswith(' '):
             x = keywords[k].replace(' ','',1)
             print('\n'+x+':')
@@ -191,7 +189,7 @@ def main():
         wordsearch(k) #kjører søk
         k = k + 1 #neste søkeord
 
-    max_mulige = (max_row*3) * len(keywords) #max mulige antall treff
+    max_mulige = (max_row*3) * len(keywords) #max mulige antall treff variabel
 
     print('\n\n'+str(actual_max)+' treff av totalt '+str(max_mulige)+' mulige.') #printer totale treff
     md.write('\n\n'+str(actual_max)+' treff av totalt '+str(max_mulige)+' mulige.')#printer totale treff
@@ -202,7 +200,7 @@ def main():
     ws.cell(2,12,max_row*3) #antall mulige treff per søkeord
     ws.cell(2,13,max_mulige)#antall mulige treff totalt
 
-    for _ in range(ws.max_row): #fjerner ord fra excel-arket som lenger ikke er i keywords
+    for _ in range(ws.max_row): #fjerner ord fra statistikk-arket som lenger ikke er i keywords
         if ws.cell(1,len(keywords)+2) != None:
             ws.delete_rows(len(keywords)+2)
             
@@ -211,3 +209,9 @@ def main():
 
 
 main() #gjør alt basically
+
+
+
+
+#bow_transformer = CountVectorizer(analyzer=text_process).fit(frame[i])
+#unique += (len(bow_transformer.vocabulary_))
