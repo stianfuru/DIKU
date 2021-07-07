@@ -64,7 +64,7 @@ def search_in_frame(frame, k):
         search = re.search(keywords[k].lower(),arraystr.lower()) #søkefunskjon
         if str(search) != 'None': #sjekker at det er match                                  
             
-            #workaround for sheetnavn for [- ] var med i søkeordet
+            #workaround for sheetnavn hvor [- ] var med i søkeordet
             title = keywords[k]
             if "[- ]" in title:
                     title = title.replace('[- ]','')
