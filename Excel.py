@@ -93,7 +93,7 @@ def search_in_frame(frame, k):
             else: #hvis den fantes så skriver den i riktig ark
                 ws2 = wb[title]
 
-            nyttfag = True
+            nyttfag = True #sjekker om faget allerede har gitt treff
             for ord in unique:                
                 if ord == Emnekode[i]:
                     nyttfag = False
@@ -101,7 +101,7 @@ def search_in_frame(frame, k):
                 else:
                     continue
 
-            if nyttfag == True:
+            if nyttfag == True: #legger til i array hvis emnokoden ikke var der
                 unique.append(Emnekode[i])
 
             
@@ -157,8 +157,8 @@ def search_in_frame(frame, k):
         print(str(count_max)+' treff av totalt '+str((max_row*3))+' mulige på søkeordet: '+keywords[k]) #printer ut max_count
         md.write(str(count_max)+' treff av totalt '+str((max_row*3))+' mulige på søkeordet: '+keywords[k]+'\n')   
         ws.cell(k+2,5,count_max)#skriver til statistikk arket
-        ws.cell(k+2,6,len(unique))
-        unique.clear()
+        ws.cell(k+2,6,len(unique)) #skriver ut antall unike fag
+        unique.clear() # resetter arrayet til neste søkeord
         actual_max += count_max #legger til count_max til actual_max
         count_max = 0 #resetter count_max, ferdig med søkeordet
        
