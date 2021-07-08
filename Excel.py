@@ -49,6 +49,7 @@ actual_max = 0 #teller for alle søkeord
 
 #lager md-fil til alternativ output
 md = open("resultat.md", "w+")
+unique = []
 
 
 def search_in_frame(frame, k):
@@ -92,6 +93,18 @@ def search_in_frame(frame, k):
             else: #hvis den fantes så skriver den i riktig ark
                 ws2 = wb[title]
 
+            nyttfag = True
+            for ord in unique:                
+                if ord == Emnekode[i]:
+                    nyttfag = False
+                    break
+                else:
+                    continue
+
+            if nyttfag == True:
+                unique.append(Emnekode[i])
+
+            
             #skriver til nye sheets
             if str(frame) == str(LUK): #LUK info
                 ws2.cell(count+3,1, Emnekode[i])
@@ -144,8 +157,10 @@ def search_in_frame(frame, k):
         print(str(count_max)+' treff av totalt '+str((max_row*3))+' mulige på søkeordet: '+keywords[k]) #printer ut max_count
         md.write(str(count_max)+' treff av totalt '+str((max_row*3))+' mulige på søkeordet: '+keywords[k]+'\n')   
         ws.cell(k+2,5,count_max)#skriver til statistikk arket
+        ws.cell(k+2,6,len(unique))
+        unique.clear()
         actual_max += count_max #legger til count_max til actual_max
-        count_max = 0 #resetter count_max
+        count_max = 0 #resetter count_max, ferdig med søkeordet
        
 def wordsearch(k):
     p = 0   #indeks for frame
@@ -153,15 +168,15 @@ def wordsearch(k):
         if p == 0: #går første gjennom LUK
             print('LUK:')
             md.write('LUK: \n')
-            search_in_frame(LUK, k) #kaller search_in_fram funksjonen i LUK
+            search_in_frame(LUK, k) #kaller search_in_frame funksjonen i LUK
         elif p == 1: #så LUF
             print('LUF:')
             md.write('LUF: \n')
-            search_in_frame(LUF, k) #kaller search_in_fram funksjonen i LUF
+            search_in_frame(LUF, k) #kaller search_in_frame funksjonen i LUF
         else: #til sist LUG
             print('LUG:')
             md.write('LUG: \n')
-            search_in_frame(LUG, k) #kaller search_in_fram funksjonen i LUG
+            search_in_frame(LUG, k) #kaller search_in_frame funksjonen i LUG
         p = p + 1 #neste frame
 
 def main():
