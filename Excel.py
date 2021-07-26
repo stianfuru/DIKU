@@ -209,11 +209,10 @@ def main():
     print('\n\n'+str(actual_max)+' treff av totalt '+str(max_mulige)+' mulige.') #printer totale treff
     md.write('\n\n'+str(actual_max)+' treff av totalt '+str(max_mulige)+' mulige.')#printer totale treff
     ws.cell(2,7,actual_max) #skriver antall totale treff
-    ws.cell(2,9,max_row) #antall mulige treff for LUK
-    ws.cell(2,10,max_row) #antall mulige treff for LUF
-    ws.cell(2,11,max_row) #antall mulige treff for LUG
-    ws.cell(2,12,max_row*3) #antall mulige treff per søkeord
-    ws.cell(2,13,max_mulige)#antall mulige treff totalt
+    ws.cell(2,9,max_row*len(keywords)) #antall unike treff
+    ws.cell(2,10,max_row) #antall mulige treff per kategori
+    ws.cell(2,11,max_row*3) #antall mulige treff per søkeord
+    ws.cell(2,12,max_mulige)#antall mulige treff totalt
 
     for _ in range(ws.max_row): #fjerner ord fra statistikk-arket som lenger ikke er i keywords
         if ws.cell(1,len(keywords)+2) != None:
