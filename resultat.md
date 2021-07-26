@@ -1,13 +1,4 @@
 
-digital tvilling:
-LUK: 
-0 treff av 42 mulige
-LUF: 
-0 treff av 42 mulige
-LUG: 
-0 treff av 42 mulige
-0 treff av totalt 126 mulige på søkeordet: digital tvilling
-
 virtuell:
 LUK: 
 0 treff av 42 mulige
@@ -117,15 +108,6 @@ EMPE2500: Studenten kan utføre grunnleggende beregninger av varmetransport U-ver
 LUG: 
 0 treff av 42 mulige
 5 treff av totalt 126 mulige på søkeordet:  BIM[- ]
-
-digital samhand:
-LUK: 
-0 treff av 42 mulige
-LUF: 
-0 treff av 42 mulige
-LUG: 
-0 treff av 42 mulige
-0 treff av totalt 126 mulige på søkeordet: digital samhand
 
 digital:
 LUK: 
@@ -388,4 +370,4 @@ LUG:
 0 treff av totalt 126 mulige på søkeordet: script
 
 
-59 treff av totalt 3780 mulige.
+59 treff av totalt 3528 mulige.

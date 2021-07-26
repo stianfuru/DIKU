@@ -12,8 +12,8 @@ df = pd.read_excel('Diku.xlsx', sheet_name='DIKU', usecols='B,C,O,P,Q') #leser D
 df.dropna(inplace = True) #skal fjerne null-celler
 
 
-keywords = ['digital tvilling','virtuell',' VR[- ]',' AR[- ]',' XR[- ]','hololens','big room','revit','programvare','trimble'
-,' BIM[- ]','digital samhand','digital','modell','kunstig intelligens',' ICE[- ]',' VDC[- ]','samtidig prosjektering'
+keywords = ['virtuell',' VR[- ]',' AR[- ]',' XR[- ]','hololens','big room','revit','programvare','trimble'
+,' BIM[- ]','digital','modell','kunstig intelligens',' ICE[- ]',' VDC[- ]','samtidig prosjektering'
 ,' IPD[- ]','lean', 'maskinlæring',' AI[- ]',' IFC[- ]','maker','samarbeid','teknologi','studentaktiv','problembasert','programm','script'] #søkeord
 
 #string.punctuation uten bindestrek
