@@ -280,6 +280,27 @@ BYPE2700: Studenten har kompetanse til å ta riktige avgjørelser for å få ønsket 
 2 treff av 42 mulige
 4 treff av totalt 126 mulige på søkeordet: samarbeid
 
+tverrfaglig:
+LUK: 
+BYPE2700: Studenten har kunnskap om hvordan man identifiserer og analyserer utfordringer knyttet til prosjektets initieringsfase og kan definere forutsetninger for prosjektsuksess har grunnleggende kunnskap om avhengigheten mellom prosjekteiers forretningsmessige mål bygningsdesign teknologibruk og støttefunksjoner og hvordan dette forstås i et helhetlig perspektiv forstår prosjekteringsprosessen og dens plass i den samlede byggeprosessen har kunnskap om produkt som brukes i prosjekteringsprosess og hva som utgjør verdi i dem har kunnskap om kompleksitet i byggeprosjekter behovet for tverrfaglig samarbeid og håndtering av grensesnitt forstår viktigheten av profesjonell styring av prosjekteringsprosess for å gjøre prosjektet egnet for bruker og eiers formål har inngående kunnskap om de vanligste tids- og kostnadsestimeringsmetodene har inngående kunnskap om analysemetoder som livssyklus- kostnads- og interessentanalyse kan beskrive hovedkategoriene av prosjektorganisasjonsstrukturer prosjekt klassisk og matrise og forstår fordeler og ulemper ved de forskjellige modellene har kunnskap om forskjellige kontrakts- og prosjektleveringsmodeller inkludert nye innovative samarbeidsmodeller
+
+1 treff av 42 mulige
+LUF: 
+BYFE1201: Studenten kan samarbeide i gruppeprosjekt foreta faktainnsamling analysere designe implementere og anvende de teknologier som trengs for å løse konkrete tverrfaglige oppgaver integrere kunnskapen om de forskjellige praktiske tekniske og miljømessige krav som stilles til bygg slik at det resulterer i en helhetlig fungerende løsning planlegge og prosjektere enkle konstruksjoner i trehus utføre enkle varme- og fukttransportberegninger for bygningsdeler fremstille enkle byggetekniske tegninger ved hjelp av BIM-verktøy presentere resultater ved hjelp av tegninger skriftlige rapporter og muntlige presentasjoner
+
+1 treff av 42 mulige
+LUG: 
+BYPE2700: Studenten har kompetanse til å ta riktige avgjørelser for å få ønsket resultat innenfor de definerte kostnads- og kvalitetsrammer har kompetanse til å kunne gjennomføre evalueringer og velge riktige og tilpassede modeller for prosjektorganisering basert på prosjektets varighet størrelse og kompleksitet kan samarbeide og bidra til tverrfaglig teamsamarbeid kunne relatere forutsetninger for å lykkes i prosjektarbeid med ens arbeidssituasjon
+
+BYVE3401: Studenten kan organisere planlegge og gjennomføre tverrfaglige utredninger analyser og rapporter beskrive politisk saksgang og beslutningssystem for arealplaner i kommuner beskrive prinsipper for utvikling av bærekraftig areal- og transport bruke intervju og litteraturstudier som metoder til utredninger og rapporter
+
+EMPE2500: Studenten kan vurdere og velge riktig digitalt verktøy for hver type prosjekteringsoppgave jobbe tverrfaglig for å prosjektere optimale løsninger med hensyn til inneklima energikostnader og miljømål formidle resultater fra bygningssimulering muntlig visuelt og skriftlig
+
+EMVE3500: Studenten kan planlegge prosjektere dimensjonere og kontrollere energieffektive VVS-tekniske installasjoner arbeide i team for å gjennomføre et tverrfaglig prosjekt innen tidsfristen formidle designløsninger både muntlig visuelt og skriftlig
+
+4 treff av 42 mulige
+6 treff av totalt 126 mulige på søkeordet: tverrfaglig
+
 teknologi:
 LUK: 
 BYPE2700: Studenten har kunnskap om hvordan man identifiserer og analyserer utfordringer knyttet til prosjektets initieringsfase og kan definere forutsetninger for prosjektsuksess har grunnleggende kunnskap om avhengigheten mellom prosjekteiers forretningsmessige mål bygningsdesign teknologibruk og støttefunksjoner og hvordan dette forstås i et helhetlig perspektiv forstår prosjekteringsprosessen og dens plass i den samlede byggeprosessen har kunnskap om produkt som brukes i prosjekteringsprosess og hva som utgjør verdi i dem har kunnskap om kompleksitet i byggeprosjekter behovet for tverrfaglig samarbeid og håndtering av grensesnitt forstår viktigheten av profesjonell styring av prosjekteringsprosess for å gjøre prosjektet egnet for bruker og eiers formål har inngående kunnskap om de vanligste tids- og kostnadsestimeringsmetodene har inngående kunnskap om analysemetoder som livssyklus- kostnads- og interessentanalyse kan beskrive hovedkategoriene av prosjektorganisasjonsstrukturer prosjekt klassisk og matrise og forstår fordeler og ulemper ved de forskjellige modellene har kunnskap om forskjellige kontrakts- og prosjektleveringsmodeller inkludert nye innovative samarbeidsmodeller
@@ -370,4 +391,4 @@ LUG:
 0 treff av totalt 126 mulige på søkeordet: script
 
 
-59 treff av totalt 3528 mulige.
+65 treff av totalt 3654 mulige.

@@ -14,7 +14,8 @@ df.dropna(inplace = True) #skal fjerne null-celler
 
 keywords = ['virtuell',' VR[- ]',' AR[- ]',' XR[- ]','hololens','big room','revit','programvare','trimble'
 ,' BIM[- ]','digital','modell','kunstig intelligens',' ICE[- ]',' VDC[- ]','samtidig prosjektering'
-,' IPD[- ]','lean', 'maskinlæring',' AI[- ]',' IFC[- ]','maker','samarbeid','teknologi','studentaktiv','problembasert','programm','script'] #søkeord
+,' IPD[- ]','lean', 'maskinlæring',' AI[- ]',' IFC[- ]','maker','samarbeid','tverrfaglig','teknologi'
+,'studentaktiv','problembasert','programm','script'] #søkeord
 
 #string.punctuation uten bindestrek
 tegnsetting = """!"#$%&'()*+,./:;<=>?@[\]^_`{|}~'"""
