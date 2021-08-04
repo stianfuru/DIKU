@@ -227,11 +227,15 @@ main() #gjør alt basically
 
 
 
-#test igjen
+
 
 
 #bow_transformer = CountVectorizer(analyzer=text_process).fit(frame[i])
 #unique += (len(bow_transformer.vocabulary_))
 
 
+
 #test2
+
+#test1
+
