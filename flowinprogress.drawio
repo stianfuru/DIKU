@@ -1,14 +1,14 @@
-<mxfile host="app.diagrams.net" modified="2021-08-05T11:49:17.055Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="A6vVaAcPU_8J4vnL1hn4" version="14.9.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-05T12:19:21.521Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="XPvxoHnxDZVIQDwGTWeW" version="14.9.3" type="github">
   <diagram id="VqdJjphPVSq2Udl7x3P3" name="Page-1">
-    <mxGraphModel dx="716" dy="399" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1038" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="_rNKC_Dzp_AstTdINph1-44" value="Flowchart" style="shape=table;childLayout=tableLayout;rowLines=0;columnLines=0;startSize=40;collapsible=0;recursiveResize=0;expand=0;pointerEvents=0;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="80" y="55" width="1600" height="530" as="geometry" />
+          <mxGeometry x="80" y="55" width="1850" height="581" as="geometry" />
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-45" value="Arbeidsgruppe" style="swimlane;horizontal=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;pointerEvents=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="_rNKC_Dzp_AstTdINph1-44" vertex="1">
-          <mxGeometry y="40" width="1600" height="166" as="geometry" />
+          <mxGeometry y="40" width="1850" height="166" as="geometry" />
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-46" value="Forarbeid" style="swimlane;connectable=0;startSize=40;collapsible=0;recursiveResize=0;expand=0;pointerEvents=0;" parent="_rNKC_Dzp_AstTdINph1-45" vertex="1">
           <mxGeometry x="40" width="462" height="166" as="geometry" />
@@ -17,16 +17,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-60" value="Innhente data om eksisterende emner" style="rounded=0;whiteSpace=wrap;html=1;" parent="_rNKC_Dzp_AstTdINph1-46" vertex="1">
-          <mxGeometry x="10" y="60" width="120" height="60" as="geometry" />
+          <mxGeometry x="10" y="75" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="F4DgGvDCZBvtidA0wW8w-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="_rNKC_Dzp_AstTdINph1-46" source="_rNKC_Dzp_AstTdINph1-62" target="-_hWJmwtXpYTukLHLi6D-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-62" value="Kartlegge muligheter for nytt emne" style="rounded=0;whiteSpace=wrap;html=1;" parent="_rNKC_Dzp_AstTdINph1-46" vertex="1">
-          <mxGeometry x="150" y="60" width="120" height="60" as="geometry" />
+          <mxGeometry x="150" y="75" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-_hWJmwtXpYTukLHLi6D-7" value="Implementere endringer" style="rounded=0;whiteSpace=wrap;html=1;" parent="_rNKC_Dzp_AstTdINph1-46" vertex="1">
-          <mxGeometry x="294" y="60" width="120" height="60" as="geometry" />
+          <mxGeometry x="294" y="75" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-47" value="Utforming av emnet" style="swimlane;connectable=0;startSize=40;collapsible=0;recursiveResize=0;expand=0;pointerEvents=0;" parent="_rNKC_Dzp_AstTdINph1-45" vertex="1">
           <mxGeometry x="502" width="578" height="166" as="geometry" />
@@ -35,22 +35,22 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-71" value="Utarbeide emneplan" style="rounded=0;whiteSpace=wrap;html=1;" parent="_rNKC_Dzp_AstTdINph1-47" vertex="1">
-          <mxGeometry x="40" y="60" width="120" height="60" as="geometry" />
+          <mxGeometry x="48" y="75" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-_hWJmwtXpYTukLHLi6D-15" value="Utarbeide semesterplan" style="rounded=0;whiteSpace=wrap;html=1;" parent="_rNKC_Dzp_AstTdINph1-47" vertex="1">
-          <mxGeometry x="400" y="60" width="120" height="60" as="geometry" />
+          <mxGeometry x="400" y="75" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-48" value="Gjennomføring av emnet" style="swimlane;connectable=0;startSize=40;collapsible=0;recursiveResize=0;expand=0;pointerEvents=0;" parent="_rNKC_Dzp_AstTdINph1-45" vertex="1">
-          <mxGeometry x="1080" width="260" height="166" as="geometry" />
+          <mxGeometry x="1080" width="400" height="166" as="geometry" />
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-72" value="Gjennomføring av undervisningsopplegg" style="rounded=0;whiteSpace=wrap;html=1;" parent="_rNKC_Dzp_AstTdINph1-48" vertex="1">
-          <mxGeometry x="60" y="60" width="120" height="60" as="geometry" />
+          <mxGeometry x="160" y="75" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-49" value="Evaluering av emnet" style="swimlane;connectable=0;startSize=40;collapsible=0;recursiveResize=0;expand=0;pointerEvents=0;" parent="_rNKC_Dzp_AstTdINph1-45" vertex="1">
-          <mxGeometry x="1340" width="260" height="166" as="geometry" />
+          <mxGeometry x="1480" width="370" height="166" as="geometry" />
         </mxCell>
-        <mxCell id="_rNKC_Dzp_AstTdINph1-73" value="Evaulering av gjennomførelsen" style="rounded=0;whiteSpace=wrap;html=1;" parent="_rNKC_Dzp_AstTdINph1-49" vertex="1">
-          <mxGeometry x="65" y="60" width="120" height="60" as="geometry" />
+        <mxCell id="_rNKC_Dzp_AstTdINph1-73" value="Evaulere emnet og tilbakemeldinger fra studentene" style="rounded=0;whiteSpace=wrap;html=1;" parent="_rNKC_Dzp_AstTdINph1-49" vertex="1">
+          <mxGeometry x="125" y="75" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-_hWJmwtXpYTukLHLi6D-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="_rNKC_Dzp_AstTdINph1-45" source="_rNKC_Dzp_AstTdINph1-72" target="_rNKC_Dzp_AstTdINph1-73" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -61,17 +61,30 @@
         <mxCell id="-_hWJmwtXpYTukLHLi6D-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="_rNKC_Dzp_AstTdINph1-45" source="-_hWJmwtXpYTukLHLi6D-15" target="_rNKC_Dzp_AstTdINph1-72" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="Ty7QDaDRaizhqRYp1Qn6-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="_rNKC_Dzp_AstTdINph1-45" source="_rNKC_Dzp_AstTdINph1-73">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1240" y="90" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1725" y="90" />
+              <mxPoint x="1820" y="90" />
+              <mxPoint x="1820" y="55" />
+              <mxPoint x="1190" y="55" />
+              <mxPoint x="1190" y="90" />
+              <mxPoint x="1240" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-50" value="Referansegruppe" style="swimlane;horizontal=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;pointerEvents=0;strokeColor=#b85450;fillColor=#F8CECC;" parent="_rNKC_Dzp_AstTdINph1-44" vertex="1">
-          <mxGeometry y="206" width="1600" height="168" as="geometry" />
+          <mxGeometry y="206" width="1850" height="219" as="geometry" />
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-51" value="" style="swimlane;connectable=0;startSize=0;collapsible=0;recursiveResize=0;expand=0;pointerEvents=0;gradientColor=#ffffff;fillColor=#000000;" parent="_rNKC_Dzp_AstTdINph1-50" vertex="1">
-          <mxGeometry x="40" width="462" height="168" as="geometry" />
+          <mxGeometry x="40" width="462" height="219" as="geometry" />
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-65" value="Innspill til forslag om nytt emne" style="rounded=0;whiteSpace=wrap;html=1;" parent="_rNKC_Dzp_AstTdINph1-51" vertex="1">
           <mxGeometry x="10" y="44" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-52" value="" style="swimlane;connectable=0;startSize=0;collapsible=0;recursiveResize=0;expand=0;pointerEvents=0;" parent="_rNKC_Dzp_AstTdINph1-50" vertex="1">
-          <mxGeometry x="502" width="578" height="168" as="geometry" />
+          <mxGeometry x="502" width="578" height="219" as="geometry" />
         </mxCell>
         <mxCell id="Ty7QDaDRaizhqRYp1Qn6-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="_rNKC_Dzp_AstTdINph1-52" source="-_hWJmwtXpYTukLHLi6D-3" target="Ty7QDaDRaizhqRYp1Qn6-11">
           <mxGeometry relative="1" as="geometry" />
@@ -83,16 +96,38 @@
           <mxGeometry x="400" y="39" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Ty7QDaDRaizhqRYp1Qn6-11" value="Reelle caseoppgaver, utfordringer, arbeidsmetoder" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="_rNKC_Dzp_AstTdINph1-52">
-          <mxGeometry x="220" y="44" width="120" height="60" as="geometry" />
+          <mxGeometry x="208" y="44" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-53" value="" style="swimlane;connectable=0;startSize=0;collapsible=0;recursiveResize=0;expand=0;pointerEvents=0;" parent="_rNKC_Dzp_AstTdINph1-50" vertex="1">
-          <mxGeometry x="1080" width="260" height="168" as="geometry" />
+          <mxGeometry x="1080" width="400" height="219" as="geometry" />
+        </mxCell>
+        <mxCell id="Ty7QDaDRaizhqRYp1Qn6-16" value="Gjesteforelesninger, veiledning" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="_rNKC_Dzp_AstTdINph1-53">
+          <mxGeometry x="21" y="29" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ty7QDaDRaizhqRYp1Qn6-17" value="Sensur og retting av prosjektoppgave" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="_rNKC_Dzp_AstTdINph1-53">
+          <mxGeometry x="210" y="129" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-54" value="" style="swimlane;connectable=0;startSize=0;collapsible=0;recursiveResize=0;expand=0;pointerEvents=0;" parent="_rNKC_Dzp_AstTdINph1-50" vertex="1">
-          <mxGeometry x="1340" width="260" height="168" as="geometry" />
+          <mxGeometry x="1480" width="370" height="219" as="geometry" />
+        </mxCell>
+        <mxCell id="Ty7QDaDRaizhqRYp1Qn6-22" value="Evaluere gjennomføringen og komme med innspill til forbedringer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="_rNKC_Dzp_AstTdINph1-54">
+          <mxGeometry x="60" y="39" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ty7QDaDRaizhqRYp1Qn6-23" value="Forpliktelse til neste gjennomføring av emnet" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="_rNKC_Dzp_AstTdINph1-54">
+          <mxGeometry x="190" y="119" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ty7QDaDRaizhqRYp1Qn6-33" value="" style="endArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="_rNKC_Dzp_AstTdINph1-54" target="Ty7QDaDRaizhqRYp1Qn6-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="20" y="-71" as="sourcePoint" />
+            <mxPoint x="100" y="129" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="20" y="189" />
+              <mxPoint x="20" y="189" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-55" value="Instituttråd" style="swimlane;horizontal=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;pointerEvents=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="_rNKC_Dzp_AstTdINph1-44" vertex="1">
-          <mxGeometry y="374" width="1600" height="156" as="geometry" />
+          <mxGeometry y="425" width="1850" height="156" as="geometry" />
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-56" value="" style="swimlane;connectable=0;startSize=0;collapsible=0;recursiveResize=0;expand=0;pointerEvents=0;" parent="_rNKC_Dzp_AstTdINph1-55" vertex="1">
           <mxGeometry x="40" width="462" height="156" as="geometry" />
@@ -107,18 +142,25 @@
           <mxGeometry x="70" y="48" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Ty7QDaDRaizhqRYp1Qn6-4" value="Innspill og forslag til endringer i semesterplan" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="_rNKC_Dzp_AstTdINph1-57">
-          <mxGeometry x="390" y="41" width="120" height="60" as="geometry" />
+          <mxGeometry x="400" y="41" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-58" value="" style="swimlane;connectable=0;startSize=0;collapsible=0;recursiveResize=0;expand=0;pointerEvents=0;" parent="_rNKC_Dzp_AstTdINph1-55" vertex="1">
-          <mxGeometry x="1080" width="260" height="156" as="geometry" />
+          <mxGeometry x="1080" width="400" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="Ty7QDaDRaizhqRYp1Qn6-20" value="Forberede og gjennomføre øvinger i modell og digital samhandlingsrom" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="_rNKC_Dzp_AstTdINph1-58">
+          <mxGeometry x="21" y="53" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-59" value="" style="swimlane;connectable=0;startSize=0;collapsible=0;recursiveResize=0;expand=0;pointerEvents=0;" parent="_rNKC_Dzp_AstTdINph1-55" vertex="1">
-          <mxGeometry x="1340" width="260" height="156" as="geometry" />
+          <mxGeometry x="1480" width="370" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="Ty7QDaDRaizhqRYp1Qn6-28" value="Evaluere gjennomføringen og komme med innspill til forbedringer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="_rNKC_Dzp_AstTdINph1-59">
+          <mxGeometry x="50" y="45" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="_rNKC_Dzp_AstTdINph1-44" source="_rNKC_Dzp_AstTdINph1-62" target="_rNKC_Dzp_AstTdINph1-65" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="240" y="260" />
+              <mxPoint x="240" y="225" />
+              <mxPoint x="110" y="225" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -133,6 +175,8 @@
         <mxCell id="F4DgGvDCZBvtidA0wW8w-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="_rNKC_Dzp_AstTdINph1-44" source="_rNKC_Dzp_AstTdINph1-71" target="-_hWJmwtXpYTukLHLi6D-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
+              <mxPoint x="602" y="185" />
+              <mxPoint x="520" y="185" />
               <mxPoint x="520" y="280" />
             </Array>
           </mxGeometry>
@@ -140,60 +184,104 @@
         <mxCell id="F4DgGvDCZBvtidA0wW8w-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.008;entryY=0.617;entryDx=0;entryDy=0;entryPerimeter=0;" parent="_rNKC_Dzp_AstTdINph1-44" source="_rNKC_Dzp_AstTdINph1-71" target="-_hWJmwtXpYTukLHLi6D-4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="520" y="160" />
-              <mxPoint x="520" y="459" />
+              <mxPoint x="602" y="185" />
+              <mxPoint x="520" y="185" />
+              <mxPoint x="520" y="510" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ty7QDaDRaizhqRYp1Qn6-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.027;entryY=0.63;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="_rNKC_Dzp_AstTdINph1-44" source="-_hWJmwtXpYTukLHLi6D-15" target="Ty7QDaDRaizhqRYp1Qn6-4">
+        <mxCell id="Ty7QDaDRaizhqRYp1Qn6-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="_rNKC_Dzp_AstTdINph1-44" source="-_hWJmwtXpYTukLHLi6D-15">
           <mxGeometry relative="1" as="geometry">
+            <mxPoint x="899" y="496" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="930" y="185" />
-              <mxPoint x="840" y="185" />
-              <mxPoint x="840" y="453" />
+              <mxPoint x="962" y="185" />
+              <mxPoint x="880" y="185" />
+              <mxPoint x="880" y="496" />
+              <mxPoint x="899" y="496" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="Ty7QDaDRaizhqRYp1Qn6-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="_rNKC_Dzp_AstTdINph1-44" source="-_hWJmwtXpYTukLHLi6D-15" target="Ty7QDaDRaizhqRYp1Qn6-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="Ty7QDaDRaizhqRYp1Qn6-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="_rNKC_Dzp_AstTdINph1-44" source="Ty7QDaDRaizhqRYp1Qn6-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1260" y="175" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1260" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ty7QDaDRaizhqRYp1Qn6-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="_rNKC_Dzp_AstTdINph1-44" source="Ty7QDaDRaizhqRYp1Qn6-20" target="_rNKC_Dzp_AstTdINph1-72">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1260" y="508" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ty7QDaDRaizhqRYp1Qn6-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="_rNKC_Dzp_AstTdINph1-44" source="Ty7QDaDRaizhqRYp1Qn6-22" target="_rNKC_Dzp_AstTdINph1-73">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1665" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="F4DgGvDCZBvtidA0wW8w-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="_rNKC_Dzp_AstTdINph1-66" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="400" y="190" as="targetPoint" />
+            <mxPoint x="400" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="F4DgGvDCZBvtidA0wW8w-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="_rNKC_Dzp_AstTdINph1-65" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="400" y="190" as="targetPoint" />
+            <mxPoint x="400" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="F4DgGvDCZBvtidA0wW8w-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="-_hWJmwtXpYTukLHLi6D-4" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="750" y="190" as="targetPoint" />
+            <mxPoint x="930" y="200" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="750" y="507" />
-              <mxPoint x="750" y="190" />
+              <mxPoint x="930" y="558" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="Ty7QDaDRaizhqRYp1Qn6-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ty7QDaDRaizhqRYp1Qn6-4">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1120" y="190" as="targetPoint" />
+            <mxPoint x="1120" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1120" y="551" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="Ty7QDaDRaizhqRYp1Qn6-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Ty7QDaDRaizhqRYp1Qn6-3">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1120" y="190" as="targetPoint" />
+            <mxPoint x="1120" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1120" y="330" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="Ty7QDaDRaizhqRYp1Qn6-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ty7QDaDRaizhqRYp1Qn6-11">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="810" y="190" as="targetPoint" />
+            <mxPoint x="930" y="200" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="910" y="335" />
-              <mxPoint x="910" y="240" />
-              <mxPoint x="810" y="240" />
+              <mxPoint x="930" y="335" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ty7QDaDRaizhqRYp1Qn6-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ty7QDaDRaizhqRYp1Qn6-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1510" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ty7QDaDRaizhqRYp1Qn6-34" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="Ty7QDaDRaizhqRYp1Qn6-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1580" y="330" as="sourcePoint" />
+            <mxPoint x="1680" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ty7QDaDRaizhqRYp1Qn6-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ty7QDaDRaizhqRYp1Qn6-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1871.5999755859375" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
