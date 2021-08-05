@@ -1,10 +1,10 @@
-<mxfile host="app.diagrams.net" modified="2021-08-05T12:24:22.379Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="H5HyT-7Tv9CGxwNaH1Nf" version="14.9.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-05T12:26:56.273Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="lFDy4ppcU4RB3huXv0Yt" version="14.9.3" type="github">
   <diagram id="VqdJjphPVSq2Udl7x3P3" name="Page-1">
     <mxGraphModel dx="1221" dy="681" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="_rNKC_Dzp_AstTdINph1-44" value="Flowchart" style="shape=table;childLayout=tableLayout;rowLines=0;columnLines=0;startSize=40;collapsible=0;recursiveResize=0;expand=0;pointerEvents=0;fontStyle=1" parent="1" vertex="1">
+        <mxCell id="_rNKC_Dzp_AstTdINph1-44" value="Flytdiagram" style="shape=table;childLayout=tableLayout;rowLines=0;columnLines=0;startSize=40;collapsible=0;recursiveResize=0;expand=0;pointerEvents=0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="80" y="55" width="1850" height="581" as="geometry" />
         </mxCell>
         <mxCell id="_rNKC_Dzp_AstTdINph1-45" value="Arbeidsgruppe" style="swimlane;horizontal=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;collapsible=0;recursiveResize=0;expand=0;pointerEvents=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="_rNKC_Dzp_AstTdINph1-44" vertex="1">
