@@ -5,11 +5,11 @@ from openpyxl.styles import Alignment, Font
 from nltk.corpus import stopwords
 
 
-df = pd.read_excel('Diku.xlsx', sheet_name='DIKU')
+df = pd.read_excel('Diku.xlsx', sheet_name='DIKU', usecols='B,C,L,M,N')
 df.dropna(inplace=True)
 
 
-keywords = []
+keywords = ['prosjektbasert','prosjekt','gruppe','studentaktiv','flipped']
 
 tegnsetting = """!"#$%&'()*+,./:;<=>?@[\]^_`{|}~'"""
 
@@ -65,15 +65,15 @@ def search_in_frame(frame, k):
                 ws2.cell(1,1, 'LOA')
                 ws2.cell(2,1, 'Emnekode:')
                 ws2.cell(2,2, 'Emnenavn:')
-                ws2.cell(2,3, 'Læringsformer og aktiviteter:')¨
-                ws2.cell(1,1, 'AK')
-                ws2.cell(2,1, 'Emnekode:')
-                ws2.cell(2,2, 'Emnenavn:')
-                ws2.cell(2,3, 'Arbeidskrav')
-                ws2.cell(1,1, 'EF')
-                ws2.cell(2,1, 'Emnekode:')
-                ws2.cell(2,2, 'Emnenavn:')
-                ws2.cell(2,3, 'Eksamensform')
+                ws2.cell(2,3, 'Læringsformer og aktiviteter:')
+                ws2.cell(1,4, 'AK')
+                ws2.cell(2,4, 'Emnekode:')
+                ws2.cell(2,5, 'Emnenavn:')
+                ws2.cell(2,6, 'Arbeidskrav')
+                ws2.cell(1,7, 'EF')
+                ws2.cell(2,7, 'Emnekode:')
+                ws2.cell(2,8, 'Emnenavn:')
+                ws2.cell(2,9, 'Eksamensform')
             else:
                 ws2 = wb[title]
 
@@ -110,6 +110,8 @@ def search_in_frame(frame, k):
             i = i + 1 #neste celle
             continue
         i = i + 1 #neste celle hvis det ikke var treff
+
+    count_max += count
 
     if str(frame) == str(LOA):
         ws.cell(k+2,2,count) 
@@ -148,7 +150,6 @@ def main():
 
     max_mulige = (max_row*3) * len(keywords)
     ws.cell(2,7,actual_max) #skriver antall totale treff
-    ws.cell(2,9,max_row*len(keywords)) #antall unike treff
     ws.cell(2,10,max_row) #antall mulige treff per kategori
     ws.cell(2,11,max_row*3) #antall mulige treff per søkeord
     ws.cell(2,12,max_mulige)#antall mulige treff totalt
