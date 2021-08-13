@@ -9,7 +9,7 @@ df = pd.read_excel('Diku.xlsx', sheet_name='DIKU', usecols='B,C,L,M,N')
 df.dropna(inplace=True)
 
 
-keywords = ['prosjektbasert','prosjekt','gruppe','studentaktiv','flipped']
+keywords = ['prosjektbasert','prosjekt','gruppe','studentaktiv','flipped', 'individ']
 
 tegnsetting = """!"#$%&'()*+,./:;<=>?@[\]^_`{|}~'"""
 
