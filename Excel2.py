@@ -38,6 +38,7 @@ actual_max = 0
 unique = []
 
 
+
 def search_in_frame(frame, k):
     i = 0 
     count = 0
@@ -61,8 +62,64 @@ def search_in_frame(frame, k):
 
             if createsheet == True:
                 ws2 = wb.create_sheet(title)
-                ws2.cell(1,1, 'L')
+                ws2.cell(1,1, 'LOA')
+                ws2.cell(2,1, 'Emnekode:')
+                ws2.cell(2,2, 'Emnenavn:')
+                ws2.cell(2,3, 'Læringsformer og aktiviteter:')¨
+                ws2.cell(1,1, 'AK')
+                ws2.cell(2,1, 'Emnekode:')
+                ws2.cell(2,2, 'Emnenavn:')
+                ws2.cell(2,3, 'Arbeidskrav')
+                ws2.cell(1,1, 'EF')
+                ws2.cell(2,1, 'Emnekode:')
+                ws2.cell(2,2, 'Emnenavn:')
+                ws2.cell(2,3, 'Eksamensform')
+            else:
+                ws2 = wb[title]
 
+            if str(frame) == str(LOA): #LUK info
+                ws2.cell(count+3,1, Emnekode[i])
+                ws2.cell(count+3,2, Emnenavn[i])
+                ws2.cell(count+3,3, arraystr)
+            elif str(frame) == str(AK):#LUF info
+                ws2.cell(count+3,4, Emnekode[i])
+                ws2.cell(count+3,5, Emnenavn[i])
+                ws2.cell(count+3,6, arraystr)
+            else:#LUG info
+                ws2.cell(count+3,7, Emnekode[i])
+                ws2.cell(count+3,8, Emnenavn[i])
+                ws2.cell(count+3,9, arraystr)
+
+            for row in ws2.iter_rows(): #setter alle celler til bryt tekst
+                for cell in row:
+                    cell.alignment = Alignment(wrap_text=True, vertical='top')
+            
+            ws2.column_dimensions['A'].width = 15
+            ws2.column_dimensions['D'].width = 15
+            ws2.column_dimensions['G'].width = 15
+
+            ws2.column_dimensions['B'].width = 20
+            ws2.column_dimensions['E'].width = 20
+            ws2.column_dimensions['H'].width = 20
+
+            ws2.column_dimensions['C'].width = 50
+            ws2.column_dimensions['F'].width = 50
+            ws2.column_dimensions['I'].width = 50
+
+            count = count + 1 #+1 i teller
+            i = i + 1 #neste celle
+            continue
+        i = i + 1 #neste celle hvis det ikke var treff
+
+    if str(frame) == str(LOA):
+        ws.cell(k+2,2,count) 
+    elif str(frame) == str(AK):
+       ws.cell(k+2,3,count)
+    else: 
+        ws.cell(k+2,4,count)
+        ws.cell(k+2,5,count_max)
+        actual_max += count_max
+        count_max = 0
 
 def wordsearch(k):
     p = 0
